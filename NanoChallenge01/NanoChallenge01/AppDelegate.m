@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CIRSoundTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    // Iniciando a SoundTest
+    CIRSoundTestViewController *test = [[CIRSoundTestViewController alloc] init];
+    self.window.rootViewController = test;
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

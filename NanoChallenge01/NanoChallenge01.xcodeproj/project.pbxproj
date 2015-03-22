@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1803C7001ABF41ED00D4C487 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C6FF1ABF41ED00D4C487 /* SoundManager.m */; };
+		1803C7031ABF508B00D4C487 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1803C7021ABF508B00D4C487 /* alarm.mp3 */; };
+		1803C7061ABF554D00D4C487 /* CIRSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C7051ABF554D00D4C487 /* CIRSound.m */; };
+		1803C7091ABF584400D4C487 /* CIRSoundLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */; };
 		181D56BC1ABDB90600D252BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56BB1ABDB90600D252BC /* main.m */; };
 		181D56BF1ABDB90600D252BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56BE1ABDB90600D252BC /* AppDelegate.m */; };
 		181D56C11ABDB90600D252BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D56C01ABDB90600D252BC /* Images.xcassets */; };
 		181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D56C21ABDB90600D252BC /* LaunchScreen.xib */; };
 		181D56D01ABDB90600D252BC /* NanoChallenge01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */; };
+		18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */; };
+		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
+		18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA91ABF174400BB4E0B /* playIcon.png */; };
+		18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EAA1ABF174400BB4E0B /* replayIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1803C6FE1ABF41ED00D4C487 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		1803C6FF1ABF41ED00D4C487 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		1803C7021ABF508B00D4C487 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		1803C7041ABF554D00D4C487 /* CIRSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSound.h; sourceTree = "<group>"; };
+		1803C7051ABF554D00D4C487 /* CIRSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSound.m; sourceTree = "<group>"; };
+		1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundLibrary.h; sourceTree = "<group>"; };
+		1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundLibrary.m; sourceTree = "<group>"; };
 		181D56B61ABDB90600D252BC /* NanoChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D56BA1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D56BB1ABDB90600D252BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +50,11 @@
 		181D56C91ABDB90600D252BC /* NanoChallenge01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoChallenge01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D56CE1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NanoChallenge01Tests.m; sourceTree = "<group>"; };
+		18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundTestViewController.h; sourceTree = "<group>"; };
+		18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundTestViewController.m; sourceTree = "<group>"; };
+		18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRSoundTestViewController.xib; sourceTree = "<group>"; };
+		18FF0EA91ABF174400BB4E0B /* playIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playIcon.png; sourceTree = "<group>"; };
+		18FF0EAA1ABF174400BB4E0B /* replayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replayIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +75,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1801BB9C1ABF3F310031C4D4 /* xibFiles */ = {
+			isa = PBXGroup;
+			children = (
+				181D56C21ABDB90600D252BC /* LaunchScreen.xib */,
+				18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */,
+			);
+			name = xibFiles;
+			sourceTree = "<group>";
+		};
+		1801BB9E1ABF3F6E0031C4D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */,
+				18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1803C6FD1ABF41ED00D4C487 /* SoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				1803C6FE1ABF41ED00D4C487 /* SoundManager.h */,
+				1803C6FF1ABF41ED00D4C487 /* SoundManager.m */,
+			);
+			path = SoundManager;
+			sourceTree = "<group>";
+		};
+		1803C7011ABF507C00D4C487 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1803C7021ABF508B00D4C487 /* alarm.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 		181D56AD1ABDB90600D252BC = {
 			isa = PBXGroup;
 			children = (
 				181D56B81ABDB90600D252BC /* NanoChallenge01 */,
+				18FF0EAD1ABF181E00BB4E0B /* images */,
+				1803C7011ABF507C00D4C487 /* sounds */,
 				181D56CC1ABDB90600D252BC /* NanoChallenge01Tests */,
 				181D56B71ABDB90600D252BC /* Products */,
 			);
@@ -76,11 +133,17 @@
 		181D56B81ABDB90600D252BC /* NanoChallenge01 */ = {
 			isa = PBXGroup;
 			children = (
+				1803C6FD1ABF41ED00D4C487 /* SoundManager */,
+				1801BB9C1ABF3F310031C4D4 /* xibFiles */,
+				1801BB9E1ABF3F6E0031C4D4 /* ViewControllers */,
 				181D56BD1ABDB90600D252BC /* AppDelegate.h */,
 				181D56BE1ABDB90600D252BC /* AppDelegate.m */,
 				181D56C01ABDB90600D252BC /* Images.xcassets */,
-				181D56C21ABDB90600D252BC /* LaunchScreen.xib */,
 				181D56B91ABDB90600D252BC /* Supporting Files */,
+				1803C7041ABF554D00D4C487 /* CIRSound.h */,
+				1803C7051ABF554D00D4C487 /* CIRSound.m */,
+				1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */,
+				1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */,
 			);
 			path = NanoChallenge01;
 			sourceTree = "<group>";
@@ -109,6 +172,16 @@
 				181D56CE1ABDB90600D252BC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18FF0EAD1ABF181E00BB4E0B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				18FF0EA91ABF174400BB4E0B /* playIcon.png */,
+				18FF0EAA1ABF174400BB4E0B /* replayIcon.png */,
+			);
+			name = images;
+			path = NanoChallenge01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */,
+				18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */,
+				1803C7031ABF508B00D4C487 /* alarm.mp3 in Resources */,
+				18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */,
 				181D56C11ABDB90600D252BC /* Images.xcassets in Resources */,
+				18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				181D56BF1ABDB90600D252BC /* AppDelegate.m in Sources */,
+				1803C7061ABF554D00D4C487 /* CIRSound.m in Sources */,
+				1803C7091ABF584400D4C487 /* CIRSoundLibrary.m in Sources */,
 				181D56BC1ABDB90600D252BC /* main.m in Sources */,
+				1803C7001ABF41ED00D4C487 /* SoundManager.m in Sources */,
+				18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +475,7 @@
 				181D56D51ABDB90600D252BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "NanoChallenge01Tests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +484,7 @@
 				181D56D81ABDB90600D252BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
