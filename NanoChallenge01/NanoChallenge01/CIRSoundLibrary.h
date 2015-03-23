@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SoundManager.h"
+#import "CIRSound.h"
 
 @interface CIRSoundLibrary : NSObject
 {
@@ -15,9 +15,11 @@
 }
 
 @property (nonatomic) NSArray *library;
+@property (nonatomic) CIRSound *current;
 
-- (void) addSound:(Sound *)s;
-- (void) removeSound:(Sound *)s;
-- (void) loadSounds;
+- (void) addSound:(CIRSound *)s;
+- (void) removeSound:(CIRSound *)s;
+- (CIRSound *) randomSound;
+- (void) loadAllSounds;
 
 @end

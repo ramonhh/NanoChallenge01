@@ -29,7 +29,7 @@
 }
 
 - (IBAction)playSound:(UIButton *)sender{
-//    [[SoundManager sharedManager] playSound:@"alarm.mp3"];
+   [[SoundManager sharedManager] playSound:@"alarm.mp3"];
     
 }
 
