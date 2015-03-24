@@ -12,6 +12,7 @@
 @interface CIRSoundTestViewController ()
 
 - (IBAction)playSound:(__unused UIButton *)sender;
+- (IBAction)botaoAction:(__unused UIButton *)sender;
 
 @end
 
@@ -30,6 +31,9 @@
 
 - (IBAction)playSound:(UIButton *)sender{
    [[SoundManager sharedManager] playSound:@"alarm.mp3"];
+}
+
+- (IBAction)botaoAction:(UIButton *)sender {
     
 }
 

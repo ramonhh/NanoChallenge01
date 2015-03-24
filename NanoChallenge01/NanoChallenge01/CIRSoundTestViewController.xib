@@ -38,6 +38,9 @@
                     <state key="normal" title="Option 01">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="botaoAction:" destination="-1" eventType="touchUpInside" id="vnX-HT-aSE"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-lq-dDJ">
                     <rect key="frame" x="115" y="208" width="144" height="41"/>
@@ -46,7 +49,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="playSound:" destination="-1" eventType="touchDown" id="x9c-1Q-Kub"/>
+                        <action selector="playSound:" destination="-1" eventType="touchUpInside" id="eaj-xA-Rpb"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
@@ -55,6 +58,9 @@
                     <state key="normal" title="Option 02">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="67P-8p-Zob"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-wZ-J6N">
                     <rect key="frame" x="8" y="523" width="144" height="32"/>
@@ -62,6 +68,9 @@
                     <state key="normal" title="Option 03">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="6gt-bj-WYx"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-A0-rk6">
                     <rect key="frame" x="223" y="523" width="144" height="32"/>
@@ -69,6 +78,9 @@
                     <state key="normal" title="Option 04">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="joY-YT-hAe"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
