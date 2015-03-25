@@ -21,17 +21,7 @@
 		18D1DCA11AC26A6F00654A86 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D1DCA01AC26A6F00654A86 /* cat.png */; };
 		18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */; };
 		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
-		18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA91ABF174400BB4E0B /* playIcon.png */; };
-		18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EAA1ABF174400BB4E0B /* replayIcon.png */; };
-		351F30711AC31F4C009F9D54 /* interrogacao.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30701AC31F4C009F9D54 /* interrogacao.png */; };
-		351F30761AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30731AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.png */; };
-		351F30771AC32521009F9D54 /* Pet-care-site-Background.gif in Resources */ = {isa = PBXBuildFile; fileRef = 351F30741AC32521009F9D54 /* Pet-care-site-Background.gif */; };
 		351F30781AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.gif in Resources */ = {isa = PBXBuildFile; fileRef = 351F30751AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.gif */; };
-		351F307A1AC3296E009F9D54 /* Lol_question_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30791AC3296E009F9D54 /* Lol_question_mark.png */; };
-		351F307C1AC329C5009F9D54 /* question-mark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F307B1AC329C5009F9D54 /* question-mark2.png */; };
-		351F307E1AC32AD1009F9D54 /* Twitter_question_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F307D1AC32AD1009F9D54 /* Twitter_question_mark.png */; };
-		351F30811AC32BBB009F9D54 /* doubt-321144_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F307F1AC32BBB009F9D54 /* doubt-321144_640.png */; };
-		351F30821AC32BBB009F9D54 /* question-mark-310100_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30801AC32BBB009F9D54 /* question-mark-310100_640.png */; };
 		351F30841AC335D7009F9D54 /* novacor.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30831AC335D7009F9D54 /* novacor.png */; };
 		351F30861AC344B8009F9D54 /* funwithanimals.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30851AC344B8009F9D54 /* funwithanimals.png */; };
 		351F30881AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 351F30871AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 */; };
@@ -97,22 +87,12 @@
 		181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NanoChallenge01Tests.m; sourceTree = "<group>"; };
 		18CE95DA1AC25A8E00346E40 /* CIRSoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundImage.h; sourceTree = "<group>"; };
 		18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundImage.m; sourceTree = "<group>"; };
-		18D1DC9E1AC2694F00654A86 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
-		18D1DCA01AC26A6F00654A86 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		18D1DC9E1AC2694F00654A86 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = ../dog.png; sourceTree = "<group>"; };
+		18D1DCA01AC26A6F00654A86 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../cat.png; sourceTree = "<group>"; };
 		18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundTestViewController.h; sourceTree = "<group>"; };
 		18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundTestViewController.m; sourceTree = "<group>"; };
 		18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRSoundTestViewController.xib; sourceTree = "<group>"; };
-		18FF0EA91ABF174400BB4E0B /* playIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playIcon.png; sourceTree = "<group>"; };
-		18FF0EAA1ABF174400BB4E0B /* replayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replayIcon.png; sourceTree = "<group>"; };
-		351F30701AC31F4C009F9D54 /* interrogacao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interrogacao.png; sourceTree = "<group>"; };
-		351F30731AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pet_background_by_darkrainspirit-d6gogtq.png"; sourceTree = "<group>"; };
-		351F30741AC32521009F9D54 /* Pet-care-site-Background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Pet-care-site-Background.gif"; sourceTree = "<group>"; };
 		351F30751AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pet_background_by_darkrainspirit-d6gogtq.gif"; sourceTree = "<group>"; };
-		351F30791AC3296E009F9D54 /* Lol_question_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lol_question_mark.png; sourceTree = "<group>"; };
-		351F307B1AC329C5009F9D54 /* question-mark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark2.png"; sourceTree = "<group>"; };
-		351F307D1AC32AD1009F9D54 /* Twitter_question_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_question_mark.png; sourceTree = "<group>"; };
-		351F307F1AC32BBB009F9D54 /* doubt-321144_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doubt-321144_640.png"; sourceTree = "<group>"; };
-		351F30801AC32BBB009F9D54 /* question-mark-310100_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark-310100_640.png"; sourceTree = "<group>"; };
 		351F30831AC335D7009F9D54 /* novacor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novacor.png; sourceTree = "<group>"; };
 		351F30851AC344B8009F9D54 /* funwithanimals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funwithanimals.png; sourceTree = "<group>"; };
 		351F30871AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3"; sourceTree = "<group>"; };
@@ -196,7 +176,7 @@
 		1803C7011ABF507C00D4C487 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				351F30871AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 */,
+				351F308B1AC354E9009F9D54 /* Backmusic */,
 				1803C7021ABF508B00D4C487 /* alarm.mp3 */,
 			);
 			name = sounds;
@@ -279,20 +259,10 @@
 		18FF0EAD1ABF181E00BB4E0B /* images */ = {
 			isa = PBXGroup;
 			children = (
-				351F30851AC344B8009F9D54 /* funwithanimals.png */,
+				351F308A1AC354B8009F9D54 /* Interrogacao */,
+				351F30891AC3549F009F9D54 /* Icones */,
 				351F30721AC324F3009F9D54 /* background */,
-				351F30701AC31F4C009F9D54 /* interrogacao.png */,
-				351F307F1AC32BBB009F9D54 /* doubt-321144_640.png */,
-				351F30801AC32BBB009F9D54 /* question-mark-310100_640.png */,
-				351F307B1AC329C5009F9D54 /* question-mark2.png */,
-				351F307D1AC32AD1009F9D54 /* Twitter_question_mark.png */,
-				351F30791AC3296E009F9D54 /* Lol_question_mark.png */,
-				351F30831AC335D7009F9D54 /* novacor.png */,
 				F5CD492D1AC31B4B00F270FA /* Animais */,
-				18D1DC9E1AC2694F00654A86 /* dog.png */,
-				18D1DCA01AC26A6F00654A86 /* cat.png */,
-				18FF0EA91ABF174400BB4E0B /* playIcon.png */,
-				18FF0EAA1ABF174400BB4E0B /* replayIcon.png */,
 			);
 			name = images;
 			path = NanoChallenge01;
@@ -301,18 +271,42 @@
 		351F30721AC324F3009F9D54 /* background */ = {
 			isa = PBXGroup;
 			children = (
-				351F30731AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.png */,
-				351F30741AC32521009F9D54 /* Pet-care-site-Background.gif */,
 				351F30751AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.gif */,
 			);
 			name = background;
 			sourceTree = "<group>";
 		};
+		351F30891AC3549F009F9D54 /* Icones */ = {
+			isa = PBXGroup;
+			children = (
+				351F30851AC344B8009F9D54 /* funwithanimals.png */,
+			);
+			name = Icones;
+			sourceTree = "<group>";
+		};
+		351F308A1AC354B8009F9D54 /* Interrogacao */ = {
+			isa = PBXGroup;
+			children = (
+				351F30831AC335D7009F9D54 /* novacor.png */,
+			);
+			name = Interrogacao;
+			sourceTree = "<group>";
+		};
+		351F308B1AC354E9009F9D54 /* Backmusic */ = {
+			isa = PBXGroup;
+			children = (
+				351F30871AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 */,
+			);
+			name = Backmusic;
+			sourceTree = "<group>";
+		};
 		F5CD492D1AC31B4B00F270FA /* Animais */ = {
 			isa = PBXGroup;
 			children = (
+				18D1DC9E1AC2694F00654A86 /* dog.png */,
 				F5CD492E1AC31B4B00F270FA /* aguia.png */,
 				F5CD492F1AC31B4B00F270FA /* alce.png */,
+				18D1DCA01AC26A6F00654A86 /* cat.png */,
 				F5CD49301AC31B4B00F270FA /* antilope.png */,
 				F5CD49311AC31B4B00F270FA /* burro.png */,
 				F5CD49321AC31B4B00F270FA /* cachorro.png */,
@@ -428,7 +422,6 @@
 				F5CD49521AC31B4B00F270FA /* coelho.png in Resources */,
 				F5CD49651AC31B4B00F270FA /* porco.png in Resources */,
 				18D1DC9F1AC2694F00654A86 /* dog.png in Resources */,
-				351F307C1AC329C5009F9D54 /* question-mark2.png in Resources */,
 				351F30881AC34AE9009F9D54 /* Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3 in Resources */,
 				F5CD49571AC31B4B00F270FA /* estrela-do-mar.png in Resources */,
 				F5CD495A1AC31B4B00F270FA /* gato.png in Resources */,
@@ -436,8 +429,6 @@
 				F5CD49601AC31B4B00F270FA /* macaco.png in Resources */,
 				351F30781AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.gif in Resources */,
 				F5CD494F1AC31B4B00F270FA /* burro.png in Resources */,
-				351F30771AC32521009F9D54 /* Pet-care-site-Background.gif in Resources */,
-				351F30761AC32521009F9D54 /* pet_background_by_darkrainspirit-d6gogtq.png in Resources */,
 				F5CD49541AC31B4B00F270FA /* elefante.png in Resources */,
 				F5CD494C1AC31B4B00F270FA /* aguia.png in Resources */,
 				18D1DCA11AC26A6F00654A86 /* cat.png in Resources */,
@@ -447,11 +438,9 @@
 				F5CD495D1AC31B4B00F270FA /* lemore.png in Resources */,
 				F5CD49531AC31B4B00F270FA /* curuja.png in Resources */,
 				F5CD49641AC31B4B00F270FA /* polvo.png in Resources */,
-				351F307A1AC3296E009F9D54 /* Lol_question_mark.png in Resources */,
 				351F30841AC335D7009F9D54 /* novacor.png in Resources */,
 				F5CD495B1AC31B4B00F270FA /* javali.png in Resources */,
 				F5CD49561AC31B4B00F270FA /* esquilo.png in Resources */,
-				351F30811AC32BBB009F9D54 /* doubt-321144_640.png in Resources */,
 				F5CD495C1AC31B4B00F270FA /* leao-marinho.png in Resources */,
 				F5CD49581AC31B4B00F270FA /* foca.png in Resources */,
 				1803C7031ABF508B00D4C487 /* alarm.mp3 in Resources */,
@@ -468,13 +457,8 @@
 				F5CD494D1AC31B4B00F270FA /* alce.png in Resources */,
 				F5CD49511AC31B4B00F270FA /* camelo.png in Resources */,
 				F5CD495F1AC31B4B00F270FA /* lobo.png in Resources */,
-				18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */,
-				351F30821AC32BBB009F9D54 /* question-mark-310100_640.png in Resources */,
 				181D56C11ABDB90600D252BC /* Images.xcassets in Resources */,
-				351F30711AC31F4C009F9D54 /* interrogacao.png in Resources */,
-				18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */,
 				F5CD495E1AC31B4B00F270FA /* leopardo.png in Resources */,
-				351F307E1AC32AD1009F9D54 /* Twitter_question_mark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
