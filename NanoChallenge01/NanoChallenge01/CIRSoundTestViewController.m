@@ -25,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [[SoundManager sharedManager] prepareToPlay];
+    [[SoundManager sharedManager] playMusic:@"Collage (Japanese instrumental music group) - Dohbutsu no Kohshin (Animal Parade).mp3" looping:YES];
+    [[SoundManager sharedManager] setMusicVolume:0.1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,13 +35,17 @@
 }
 
 - (IBAction)playSound:(UIButton *)sender{
-   //[[SoundManager sharedManager] playSound:@"alarm.mp3"];
+    [[SoundManager sharedManager] prepareToPlay];
+    [[SoundManager sharedManager] playSound:@"alarm.mp3"];
+    [[SoundManager sharedManager] setSoundVolume:0.5];
     
-    [self.option1 setTitle:@"Mudou!" forState: UIControlStateNormal];
+    //[self.option1 setTitle:@"Mudou!" forState: UIControlStateNormal];
     
     [self.option2 setImage:[UIImage imageNamed:@"cat.png"]
-                    forState:UIControlStateNormal];
+                  forState:UIControlStateNormal];
     [self.option2 setTitle:@"" forState: UIControlStateNormal];
+    
+    
 }
 
 /*

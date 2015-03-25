@@ -19,14 +19,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pet_background_by_darkrainspirit-d6gogtq.gif"]];
+    //[self.window addSubview:backgroundView];
     
     // Iniciando a SoundTest
     CIRSoundTestViewController *test = [[CIRSoundTestViewController alloc] init];
     self.window.rootViewController = test;
     
-    
+    [self.window addSubview:backgroundView];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
