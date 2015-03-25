@@ -23,6 +23,36 @@
 		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
 		18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA91ABF174400BB4E0B /* playIcon.png */; };
 		18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EAA1ABF174400BB4E0B /* replayIcon.png */; };
+		F5CD494C1AC31B4B00F270FA /* aguia.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD492E1AC31B4B00F270FA /* aguia.png */; };
+		F5CD494D1AC31B4B00F270FA /* alce.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD492F1AC31B4B00F270FA /* alce.png */; };
+		F5CD494E1AC31B4B00F270FA /* antilope.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49301AC31B4B00F270FA /* antilope.png */; };
+		F5CD494F1AC31B4B00F270FA /* burro.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49311AC31B4B00F270FA /* burro.png */; };
+		F5CD49501AC31B4B00F270FA /* cachorro.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49321AC31B4B00F270FA /* cachorro.png */; };
+		F5CD49511AC31B4B00F270FA /* camelo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49331AC31B4B00F270FA /* camelo.png */; };
+		F5CD49521AC31B4B00F270FA /* coelho.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49341AC31B4B00F270FA /* coelho.png */; };
+		F5CD49531AC31B4B00F270FA /* curuja.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49351AC31B4B00F270FA /* curuja.png */; };
+		F5CD49541AC31B4B00F270FA /* elefante.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49361AC31B4B00F270FA /* elefante.png */; };
+		F5CD49551AC31B4B00F270FA /* escorpiao.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49371AC31B4B00F270FA /* escorpiao.png */; };
+		F5CD49561AC31B4B00F270FA /* esquilo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49381AC31B4B00F270FA /* esquilo.png */; };
+		F5CD49571AC31B4B00F270FA /* estrela-do-mar.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49391AC31B4B00F270FA /* estrela-do-mar.png */; };
+		F5CD49581AC31B4B00F270FA /* foca.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493A1AC31B4B00F270FA /* foca.png */; };
+		F5CD49591AC31B4B00F270FA /* galo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493B1AC31B4B00F270FA /* galo.png */; };
+		F5CD495A1AC31B4B00F270FA /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493C1AC31B4B00F270FA /* gato.png */; };
+		F5CD495B1AC31B4B00F270FA /* javali.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493D1AC31B4B00F270FA /* javali.png */; };
+		F5CD495C1AC31B4B00F270FA /* leao-marinho.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493E1AC31B4B00F270FA /* leao-marinho.png */; };
+		F5CD495D1AC31B4B00F270FA /* lemore.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD493F1AC31B4B00F270FA /* lemore.png */; };
+		F5CD495E1AC31B4B00F270FA /* leopardo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49401AC31B4B00F270FA /* leopardo.png */; };
+		F5CD495F1AC31B4B00F270FA /* lobo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49411AC31B4B00F270FA /* lobo.png */; };
+		F5CD49601AC31B4B00F270FA /* macaco.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49421AC31B4B00F270FA /* macaco.png */; };
+		F5CD49611AC31B4B00F270FA /* ovelha.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49431AC31B4B00F270FA /* ovelha.png */; };
+		F5CD49621AC31B4B00F270FA /* papagaio.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49441AC31B4B00F270FA /* papagaio.png */; };
+		F5CD49631AC31B4B00F270FA /* pinguim.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49451AC31B4B00F270FA /* pinguim.png */; };
+		F5CD49641AC31B4B00F270FA /* polvo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49461AC31B4B00F270FA /* polvo.png */; };
+		F5CD49651AC31B4B00F270FA /* porco.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49471AC31B4B00F270FA /* porco.png */; };
+		F5CD49661AC31B4B00F270FA /* serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49481AC31B4B00F270FA /* serpente.png */; };
+		F5CD49671AC31B4B00F270FA /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = F5CD49491AC31B4B00F270FA /* Thumbs.db */; };
+		F5CD49681AC31B4B00F270FA /* urso.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD494A1AC31B4B00F270FA /* urso.png */; };
+		F5CD49691AC31B4B00F270FA /* vaca.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CD494B1AC31B4B00F270FA /* vaca.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +92,36 @@
 		18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRSoundTestViewController.xib; sourceTree = "<group>"; };
 		18FF0EA91ABF174400BB4E0B /* playIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playIcon.png; sourceTree = "<group>"; };
 		18FF0EAA1ABF174400BB4E0B /* replayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replayIcon.png; sourceTree = "<group>"; };
+		F5CD492E1AC31B4B00F270FA /* aguia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aguia.png; sourceTree = "<group>"; };
+		F5CD492F1AC31B4B00F270FA /* alce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alce.png; sourceTree = "<group>"; };
+		F5CD49301AC31B4B00F270FA /* antilope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = antilope.png; sourceTree = "<group>"; };
+		F5CD49311AC31B4B00F270FA /* burro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burro.png; sourceTree = "<group>"; };
+		F5CD49321AC31B4B00F270FA /* cachorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cachorro.png; sourceTree = "<group>"; };
+		F5CD49331AC31B4B00F270FA /* camelo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camelo.png; sourceTree = "<group>"; };
+		F5CD49341AC31B4B00F270FA /* coelho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coelho.png; sourceTree = "<group>"; };
+		F5CD49351AC31B4B00F270FA /* curuja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curuja.png; sourceTree = "<group>"; };
+		F5CD49361AC31B4B00F270FA /* elefante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elefante.png; sourceTree = "<group>"; };
+		F5CD49371AC31B4B00F270FA /* escorpiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = escorpiao.png; sourceTree = "<group>"; };
+		F5CD49381AC31B4B00F270FA /* esquilo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esquilo.png; sourceTree = "<group>"; };
+		F5CD49391AC31B4B00F270FA /* estrela-do-mar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estrela-do-mar.png"; sourceTree = "<group>"; };
+		F5CD493A1AC31B4B00F270FA /* foca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foca.png; sourceTree = "<group>"; };
+		F5CD493B1AC31B4B00F270FA /* galo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galo.png; sourceTree = "<group>"; };
+		F5CD493C1AC31B4B00F270FA /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
+		F5CD493D1AC31B4B00F270FA /* javali.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = javali.png; sourceTree = "<group>"; };
+		F5CD493E1AC31B4B00F270FA /* leao-marinho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leao-marinho.png"; sourceTree = "<group>"; };
+		F5CD493F1AC31B4B00F270FA /* lemore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemore.png; sourceTree = "<group>"; };
+		F5CD49401AC31B4B00F270FA /* leopardo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leopardo.png; sourceTree = "<group>"; };
+		F5CD49411AC31B4B00F270FA /* lobo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobo.png; sourceTree = "<group>"; };
+		F5CD49421AC31B4B00F270FA /* macaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macaco.png; sourceTree = "<group>"; };
+		F5CD49431AC31B4B00F270FA /* ovelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ovelha.png; sourceTree = "<group>"; };
+		F5CD49441AC31B4B00F270FA /* papagaio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = papagaio.png; sourceTree = "<group>"; };
+		F5CD49451AC31B4B00F270FA /* pinguim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinguim.png; sourceTree = "<group>"; };
+		F5CD49461AC31B4B00F270FA /* polvo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polvo.png; sourceTree = "<group>"; };
+		F5CD49471AC31B4B00F270FA /* porco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco.png; sourceTree = "<group>"; };
+		F5CD49481AC31B4B00F270FA /* serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serpente.png; sourceTree = "<group>"; };
+		F5CD49491AC31B4B00F270FA /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		F5CD494A1AC31B4B00F270FA /* urso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urso.png; sourceTree = "<group>"; };
+		F5CD494B1AC31B4B00F270FA /* vaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vaca.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +254,7 @@
 		18FF0EAD1ABF181E00BB4E0B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F5CD492D1AC31B4B00F270FA /* Animais */,
 				18D1DC9E1AC2694F00654A86 /* dog.png */,
 				18D1DCA01AC26A6F00654A86 /* cat.png */,
 				18FF0EA91ABF174400BB4E0B /* playIcon.png */,
@@ -201,6 +262,43 @@
 			);
 			name = images;
 			path = NanoChallenge01;
+			sourceTree = "<group>";
+		};
+		F5CD492D1AC31B4B00F270FA /* Animais */ = {
+			isa = PBXGroup;
+			children = (
+				F5CD492E1AC31B4B00F270FA /* aguia.png */,
+				F5CD492F1AC31B4B00F270FA /* alce.png */,
+				F5CD49301AC31B4B00F270FA /* antilope.png */,
+				F5CD49311AC31B4B00F270FA /* burro.png */,
+				F5CD49321AC31B4B00F270FA /* cachorro.png */,
+				F5CD49331AC31B4B00F270FA /* camelo.png */,
+				F5CD49341AC31B4B00F270FA /* coelho.png */,
+				F5CD49351AC31B4B00F270FA /* curuja.png */,
+				F5CD49361AC31B4B00F270FA /* elefante.png */,
+				F5CD49371AC31B4B00F270FA /* escorpiao.png */,
+				F5CD49381AC31B4B00F270FA /* esquilo.png */,
+				F5CD49391AC31B4B00F270FA /* estrela-do-mar.png */,
+				F5CD493A1AC31B4B00F270FA /* foca.png */,
+				F5CD493B1AC31B4B00F270FA /* galo.png */,
+				F5CD493C1AC31B4B00F270FA /* gato.png */,
+				F5CD493D1AC31B4B00F270FA /* javali.png */,
+				F5CD493E1AC31B4B00F270FA /* leao-marinho.png */,
+				F5CD493F1AC31B4B00F270FA /* lemore.png */,
+				F5CD49401AC31B4B00F270FA /* leopardo.png */,
+				F5CD49411AC31B4B00F270FA /* lobo.png */,
+				F5CD49421AC31B4B00F270FA /* macaco.png */,
+				F5CD49431AC31B4B00F270FA /* ovelha.png */,
+				F5CD49441AC31B4B00F270FA /* papagaio.png */,
+				F5CD49451AC31B4B00F270FA /* pinguim.png */,
+				F5CD49461AC31B4B00F270FA /* polvo.png */,
+				F5CD49471AC31B4B00F270FA /* porco.png */,
+				F5CD49481AC31B4B00F270FA /* serpente.png */,
+				F5CD49491AC31B4B00F270FA /* Thumbs.db */,
+				F5CD494A1AC31B4B00F270FA /* urso.png */,
+				F5CD494B1AC31B4B00F270FA /* vaca.png */,
+			);
+			path = Animais;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,14 +381,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CD49521AC31B4B00F270FA /* coelho.png in Resources */,
+				F5CD49651AC31B4B00F270FA /* porco.png in Resources */,
 				18D1DC9F1AC2694F00654A86 /* dog.png in Resources */,
+				F5CD49571AC31B4B00F270FA /* estrela-do-mar.png in Resources */,
+				F5CD495A1AC31B4B00F270FA /* gato.png in Resources */,
 				181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */,
+				F5CD49601AC31B4B00F270FA /* macaco.png in Resources */,
+				F5CD494F1AC31B4B00F270FA /* burro.png in Resources */,
+				F5CD49541AC31B4B00F270FA /* elefante.png in Resources */,
+				F5CD494C1AC31B4B00F270FA /* aguia.png in Resources */,
 				18D1DCA11AC26A6F00654A86 /* cat.png in Resources */,
+				F5CD49591AC31B4B00F270FA /* galo.png in Resources */,
+				F5CD49691AC31B4B00F270FA /* vaca.png in Resources */,
 				18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */,
+				F5CD495D1AC31B4B00F270FA /* lemore.png in Resources */,
+				F5CD49531AC31B4B00F270FA /* curuja.png in Resources */,
+				F5CD49641AC31B4B00F270FA /* polvo.png in Resources */,
+				F5CD495B1AC31B4B00F270FA /* javali.png in Resources */,
+				F5CD49561AC31B4B00F270FA /* esquilo.png in Resources */,
+				F5CD495C1AC31B4B00F270FA /* leao-marinho.png in Resources */,
+				F5CD49581AC31B4B00F270FA /* foca.png in Resources */,
 				1803C7031ABF508B00D4C487 /* alarm.mp3 in Resources */,
+				F5CD49501AC31B4B00F270FA /* cachorro.png in Resources */,
+				F5CD49551AC31B4B00F270FA /* escorpiao.png in Resources */,
+				F5CD494E1AC31B4B00F270FA /* antilope.png in Resources */,
+				F5CD49671AC31B4B00F270FA /* Thumbs.db in Resources */,
+				F5CD49611AC31B4B00F270FA /* ovelha.png in Resources */,
+				F5CD49631AC31B4B00F270FA /* pinguim.png in Resources */,
+				F5CD49681AC31B4B00F270FA /* urso.png in Resources */,
+				F5CD49661AC31B4B00F270FA /* serpente.png in Resources */,
+				F5CD49621AC31B4B00F270FA /* papagaio.png in Resources */,
+				F5CD494D1AC31B4B00F270FA /* alce.png in Resources */,
+				F5CD49511AC31B4B00F270FA /* camelo.png in Resources */,
+				F5CD495F1AC31B4B00F270FA /* lobo.png in Resources */,
 				18FF0EAB1ABF174400BB4E0B /* playIcon.png in Resources */,
 				181D56C11ABDB90600D252BC /* Images.xcassets in Resources */,
 				18FF0EAC1ABF174400BB4E0B /* replayIcon.png in Resources */,
+				F5CD495E1AC31B4B00F270FA /* leopardo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
