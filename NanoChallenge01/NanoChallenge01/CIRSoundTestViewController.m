@@ -11,8 +11,11 @@
 
 @interface CIRSoundTestViewController ()
 
+@property (nonatomic, copy) NSArray *images;
+@property (nonatomic, copy) NSArray *sounds;
+@property (nonatomic, copy) NSArray *randomImages;
+
 - (IBAction)playSound:(__unused UIButton *)sender;
-- (IBAction)botaoAction:(__unused UIButton *)sender;
 
 @end
 
@@ -30,11 +33,13 @@
 }
 
 - (IBAction)playSound:(UIButton *)sender{
-   [[SoundManager sharedManager] playSound:@"alarm.mp3"];
-}
-
-- (IBAction)botaoAction:(UIButton *)sender {
+   //[[SoundManager sharedManager] playSound:@"alarm.mp3"];
     
+    [self.option1 setTitle:@"Mudou!" forState: UIControlStateNormal];
+    
+    [self.option2 setImage:[UIImage imageNamed:@"cat.png"]
+                    forState:UIControlStateNormal];
+    [self.option2 setTitle:@"" forState: UIControlStateNormal];
 }
 
 /*

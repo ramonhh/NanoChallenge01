@@ -6,6 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CIRSoundTestViewController">
             <connections>
+                <outlet property="option1" destination="2fo-nh-Aox" id="d0V-9K-6Iv"/>
+                <outlet property="option2" destination="kyz-Pe-hax" id="b6b-Hv-zDf"/>
+                <outlet property="option3" destination="f6F-wZ-J6N" id="Op0-gX-qlN"/>
+                <outlet property="option4" destination="x0F-A0-rk6" id="xhW-iX-fSX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,30 +24,14 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
-                    <rect key="frame" x="115" y="319" width="144" height="29"/>
-                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What sound is it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Y-o7-RHg">
-                    <rect key="frame" x="8" y="108" width="359" height="50"/>
+                    <rect key="frame" x="8" y="66" width="359" height="50"/>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-nh-Aox">
-                    <rect key="frame" x="8" y="404" width="144" height="32"/>
-                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                    <state key="normal" title="Option 01">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="botaoAction:" destination="-1" eventType="touchUpInside" id="vnX-HT-aSE"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-lq-dDJ">
-                    <rect key="frame" x="115" y="208" width="144" height="41"/>
+                    <rect key="frame" x="115" y="158" width="144" height="41"/>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                     <state key="normal" title="Play sound">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,15 +40,18 @@
                         <action selector="playSound:" destination="-1" eventType="touchUpInside" id="eaj-xA-Rpb"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
-                    <rect key="frame" x="223" y="404" width="144" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-nh-Aox">
+                    <rect key="frame" x="8" y="356" width="144" height="32"/>
                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                    <state key="normal" title="Option 02">
+                    <state key="normal" title="Option 01">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="67P-8p-Zob"/>
-                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
+                    <rect key="frame" x="223" y="308" width="128" height="128"/>
+                    <state key="normal" image="dog.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-wZ-J6N">
                     <rect key="frame" x="8" y="523" width="144" height="32"/>
@@ -68,9 +59,6 @@
                     <state key="normal" title="Option 03">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="6gt-bj-WYx"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-A0-rk6">
                     <rect key="frame" x="223" y="523" width="144" height="32"/>
@@ -78,13 +66,19 @@
                     <state key="normal" title="Option 04">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="botaoAction:" destination="-1" eventType="touchDragInside" id="joY-YT-hAe"/>
-                    </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
+                    <rect key="frame" x="115" y="271" width="144" height="29"/>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="dog.png" width="128" height="128"/>
+    </resources>
 </document>

@@ -10,6 +10,6 @@
 
 @interface CIRSoundTestViewController : UIViewController
 
-@property (nonatomic) IBOutlet *botao;
+@property (nonatomic) IBOutlet UIButton *option1, *option2, *option3, *option4;
 
 @end
