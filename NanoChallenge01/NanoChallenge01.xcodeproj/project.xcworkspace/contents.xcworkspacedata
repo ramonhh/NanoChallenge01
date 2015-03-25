@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Aniquiz.xcodeproj">
+      location = "self:NanoChallenge01.xcodeproj">
    </FileRef>
 </Workspace>

@@ -401,7 +401,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Aniquiz" */;
+			buildConfigurationList = 181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "NanoChallenge01" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -667,7 +667,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Aniquiz" */ = {
+		181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "NanoChallenge01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181D56D11ABDB90600D252BC /* Debug */,

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "181D56B51ABDB90600D252BC"
                BuildableName = "NanoChallenge01.app"
                BlueprintName = "NanoChallenge01"
-               ReferencedContainer = "container:Aniquiz.xcodeproj">
+               ReferencedContainer = "container:NanoChallenge01.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "181D56C81ABDB90600D252BC"
                BuildableName = "NanoChallenge01Tests.xctest"
                BlueprintName = "NanoChallenge01Tests"
-               ReferencedContainer = "container:Aniquiz.xcodeproj">
+               ReferencedContainer = "container:NanoChallenge01.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "181D56C81ABDB90600D252BC"
                BuildableName = "NanoChallenge01Tests.xctest"
                BlueprintName = "NanoChallenge01Tests"
-               ReferencedContainer = "container:Aniquiz.xcodeproj">
+               ReferencedContainer = "container:NanoChallenge01.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "181D56B51ABDB90600D252BC"
             BuildableName = "NanoChallenge01.app"
             BlueprintName = "NanoChallenge01"
-            ReferencedContainer = "container:Aniquiz.xcodeproj">
+            ReferencedContainer = "container:NanoChallenge01.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -79,7 +79,7 @@
             BlueprintIdentifier = "181D56B51ABDB90600D252BC"
             BuildableName = "NanoChallenge01.app"
             BlueprintName = "NanoChallenge01"
-            ReferencedContainer = "container:Aniquiz.xcodeproj">
+            ReferencedContainer = "container:NanoChallenge01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,7 +98,7 @@
             BlueprintIdentifier = "181D56B51ABDB90600D252BC"
             BuildableName = "NanoChallenge01.app"
             BlueprintName = "NanoChallenge01"
-            ReferencedContainer = "container:Aniquiz.xcodeproj">
+            ReferencedContainer = "container:NanoChallenge01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
