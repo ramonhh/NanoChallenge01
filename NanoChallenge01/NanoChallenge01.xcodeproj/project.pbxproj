@@ -22,6 +22,17 @@
 		185F92801AC3599A00A9A01C /* bt_gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92791AC3599A00A9A01C /* bt_gato.png */; };
 		185F92811AC3599A00A9A01C /* bt_macaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F927A1AC3599A00A9A01C /* bt_macaco.png */; };
 		185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F927B1AC3599A00A9A01C /* bt_vaca.png */; };
+		186D116C1AC4AB5E00877B0D /* som_burro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11611AC4AB5E00877B0D /* som_burro.mp3 */; };
+		186D116D1AC4AB5E00877B0D /* som_cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11621AC4AB5E00877B0D /* som_cachorro.mp3 */; };
+		186D116E1AC4AB5E00877B0D /* som_elefante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11631AC4AB5E00877B0D /* som_elefante.mp3 */; };
+		186D116F1AC4AB5E00877B0D /* som_foca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11641AC4AB5E00877B0D /* som_foca.mp3 */; };
+		186D11701AC4AB5E00877B0D /* som_galo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11651AC4AB5E00877B0D /* som_galo.mp3 */; };
+		186D11711AC4AB5E00877B0D /* som_gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11661AC4AB5E00877B0D /* som_gato.mp3 */; };
+		186D11721AC4AB5E00877B0D /* som_leopardo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11671AC4AB5E00877B0D /* som_leopardo.mp3 */; };
+		186D11731AC4AB5E00877B0D /* som_macaco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11681AC4AB5E00877B0D /* som_macaco.mp3 */; };
+		186D11741AC4AB5E00877B0D /* som_ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D11691AC4AB5E00877B0D /* som_ovelha.mp3 */; };
+		186D11751AC4AB5E00877B0D /* som_serpente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D116A1AC4AB5E00877B0D /* som_serpente.mp3 */; };
+		186D11761AC4AB5E00877B0D /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 186D116B1AC4AB5E00877B0D /* som_vaca.mp3 */; };
 		18AAAA301AC47C5F00D27E14 /* bt_foca.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2C1AC47C5F00D27E14 /* bt_foca.png */; };
 		18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */; };
 		18AAAA321AC47C5F00D27E14 /* bt_ovelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */; };
@@ -36,17 +47,6 @@
 		F5CF82D31AC481280086A49B /* app-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D21AC481280086A49B /* app-120.png */; };
 		F5CF82D51AC481BE0086A49B /* app-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D41AC481BE0086A49B /* app-180.png */; };
 		F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D61AC489850086A49B /* fazenda-background.png */; };
-		F5EACE3A1AC4A2130006D7AF /* som_burro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE2F1AC4A2130006D7AF /* som_burro.mp3 */; };
-		F5EACE3B1AC4A2130006D7AF /* som_cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE301AC4A2130006D7AF /* som_cachorro.mp3 */; };
-		F5EACE3C1AC4A2130006D7AF /* som_elefante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE311AC4A2130006D7AF /* som_elefante.mp3 */; };
-		F5EACE3D1AC4A2130006D7AF /* som_foca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE321AC4A2130006D7AF /* som_foca.mp3 */; };
-		F5EACE3E1AC4A2130006D7AF /* som_galo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE331AC4A2130006D7AF /* som_galo.mp3 */; };
-		F5EACE3F1AC4A2130006D7AF /* som_gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE341AC4A2130006D7AF /* som_gato.mp3 */; };
-		F5EACE401AC4A2130006D7AF /* som_leopardo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE351AC4A2130006D7AF /* som_leopardo.mp3 */; };
-		F5EACE411AC4A2130006D7AF /* som_macaco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE361AC4A2130006D7AF /* som_macaco.mp3 */; };
-		F5EACE421AC4A2130006D7AF /* som_ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE371AC4A2130006D7AF /* som_ovelha.mp3 */; };
-		F5EACE431AC4A2130006D7AF /* som_serpente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE381AC4A2130006D7AF /* som_serpente.mp3 */; };
-		F5EACE441AC4A2130006D7AF /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5EACE391AC4A2130006D7AF /* som_vaca.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,17 @@
 		185F92791AC3599A00A9A01C /* bt_gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_gato.png; sourceTree = "<group>"; };
 		185F927A1AC3599A00A9A01C /* bt_macaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_macaco.png; sourceTree = "<group>"; };
 		185F927B1AC3599A00A9A01C /* bt_vaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_vaca.png; sourceTree = "<group>"; };
+		186D11611AC4AB5E00877B0D /* som_burro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_burro.mp3; sourceTree = "<group>"; };
+		186D11621AC4AB5E00877B0D /* som_cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_cachorro.mp3; sourceTree = "<group>"; };
+		186D11631AC4AB5E00877B0D /* som_elefante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_elefante.mp3; sourceTree = "<group>"; };
+		186D11641AC4AB5E00877B0D /* som_foca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_foca.mp3; sourceTree = "<group>"; };
+		186D11651AC4AB5E00877B0D /* som_galo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_galo.mp3; sourceTree = "<group>"; };
+		186D11661AC4AB5E00877B0D /* som_gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_gato.mp3; sourceTree = "<group>"; };
+		186D11671AC4AB5E00877B0D /* som_leopardo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_leopardo.mp3; sourceTree = "<group>"; };
+		186D11681AC4AB5E00877B0D /* som_macaco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_macaco.mp3; sourceTree = "<group>"; };
+		186D11691AC4AB5E00877B0D /* som_ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_ovelha.mp3; sourceTree = "<group>"; };
+		186D116A1AC4AB5E00877B0D /* som_serpente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_serpente.mp3; sourceTree = "<group>"; };
+		186D116B1AC4AB5E00877B0D /* som_vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_vaca.mp3; sourceTree = "<group>"; };
 		18AAAA2C1AC47C5F00D27E14 /* bt_foca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_foca.png; sourceTree = "<group>"; };
 		18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_leopardo.png; sourceTree = "<group>"; };
 		18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_ovelha.png; sourceTree = "<group>"; };
@@ -99,17 +110,6 @@
 		F5CF82D21AC481280086A49B /* app-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-120.png"; sourceTree = "<group>"; };
 		F5CF82D41AC481BE0086A49B /* app-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-180.png"; sourceTree = "<group>"; };
 		F5CF82D61AC489850086A49B /* fazenda-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fazenda-background.png"; sourceTree = "<group>"; };
-		F5EACE2F1AC4A2130006D7AF /* som_burro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_burro.mp3; path = ../../../../../Downloads/som_burro.mp3; sourceTree = "<group>"; };
-		F5EACE301AC4A2130006D7AF /* som_cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_cachorro.mp3; path = ../../../../../Downloads/som_cachorro.mp3; sourceTree = "<group>"; };
-		F5EACE311AC4A2130006D7AF /* som_elefante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_elefante.mp3; path = ../../../../../Downloads/som_elefante.mp3; sourceTree = "<group>"; };
-		F5EACE321AC4A2130006D7AF /* som_foca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_foca.mp3; path = ../../../../../Downloads/som_foca.mp3; sourceTree = "<group>"; };
-		F5EACE331AC4A2130006D7AF /* som_galo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_galo.mp3; path = ../../../../../Downloads/som_galo.mp3; sourceTree = "<group>"; };
-		F5EACE341AC4A2130006D7AF /* som_gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_gato.mp3; path = ../../../../../Downloads/som_gato.mp3; sourceTree = "<group>"; };
-		F5EACE351AC4A2130006D7AF /* som_leopardo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_leopardo.mp3; path = ../../../../../Downloads/som_leopardo.mp3; sourceTree = "<group>"; };
-		F5EACE361AC4A2130006D7AF /* som_macaco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_macaco.mp3; path = ../../../../../Downloads/som_macaco.mp3; sourceTree = "<group>"; };
-		F5EACE371AC4A2130006D7AF /* som_ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_ovelha.mp3; path = ../../../../../Downloads/som_ovelha.mp3; sourceTree = "<group>"; };
-		F5EACE381AC4A2130006D7AF /* som_serpente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_serpente.mp3; path = ../../../../../Downloads/som_serpente.mp3; sourceTree = "<group>"; };
-		F5EACE391AC4A2130006D7AF /* som_vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = som_vaca.mp3; path = ../../../../../Downloads/som_vaca.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 		1803C7011ABF507C00D4C487 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				185F92841AC359F000A9A01C /* Animais */,
+				186D11601AC4AB5E00877B0D /* Animais */,
 				351F308B1AC354E9009F9D54 /* Backmusic */,
 			);
 			name = sounds;
@@ -230,23 +230,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		185F92841AC359F000A9A01C /* Animais */ = {
+		186D11601AC4AB5E00877B0D /* Animais */ = {
 			isa = PBXGroup;
 			children = (
-				F5EACE2F1AC4A2130006D7AF /* som_burro.mp3 */,
-				F5EACE301AC4A2130006D7AF /* som_cachorro.mp3 */,
-				F5EACE311AC4A2130006D7AF /* som_elefante.mp3 */,
-				F5EACE321AC4A2130006D7AF /* som_foca.mp3 */,
-				F5EACE331AC4A2130006D7AF /* som_galo.mp3 */,
-				F5EACE341AC4A2130006D7AF /* som_gato.mp3 */,
-				F5EACE351AC4A2130006D7AF /* som_leopardo.mp3 */,
-				F5EACE361AC4A2130006D7AF /* som_macaco.mp3 */,
-				F5EACE371AC4A2130006D7AF /* som_ovelha.mp3 */,
-				F5EACE381AC4A2130006D7AF /* som_serpente.mp3 */,
-				F5EACE391AC4A2130006D7AF /* som_vaca.mp3 */,
+				186D11611AC4AB5E00877B0D /* som_burro.mp3 */,
+				186D11621AC4AB5E00877B0D /* som_cachorro.mp3 */,
+				186D11631AC4AB5E00877B0D /* som_elefante.mp3 */,
+				186D11641AC4AB5E00877B0D /* som_foca.mp3 */,
+				186D11651AC4AB5E00877B0D /* som_galo.mp3 */,
+				186D11661AC4AB5E00877B0D /* som_gato.mp3 */,
+				186D11671AC4AB5E00877B0D /* som_leopardo.mp3 */,
+				186D11681AC4AB5E00877B0D /* som_macaco.mp3 */,
+				186D11691AC4AB5E00877B0D /* som_ovelha.mp3 */,
+				186D116A1AC4AB5E00877B0D /* som_serpente.mp3 */,
+				186D116B1AC4AB5E00877B0D /* som_vaca.mp3 */,
 			);
 			name = Animais;
-			path = NanoChallenge01/Sons;
+			path = NanoChallenge01/Sons/Animais;
 			sourceTree = "<group>";
 		};
 		18CE95D61AC258E700346E40 /* CIRTestes */ = {
@@ -405,7 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185F927F1AC3599A00A9A01C /* bt_galo.png in Resources */,
-				F5EACE411AC4A2130006D7AF /* som_macaco.mp3 in Resources */,
+				186D11731AC4AB5E00877B0D /* som_macaco.mp3 in Resources */,
 				F5CF82D11AC480440086A49B /* logo.png in Resources */,
 				181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */,
 				354CA0711AC4857E002990DD /* backgroundMusic.mp3 in Resources */,
@@ -413,29 +413,29 @@
 				18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */,
 				F5CF82D51AC481BE0086A49B /* app-180.png in Resources */,
 				F5CF82D31AC481280086A49B /* app-120.png in Resources */,
-				F5EACE3C1AC4A2130006D7AF /* som_elefante.mp3 in Resources */,
+				186D116E1AC4AB5E00877B0D /* som_elefante.mp3 in Resources */,
 				351F30841AC335D7009F9D54 /* novacor.png in Resources */,
 				357D3ED31AC4847E0001D8FB /* Images.xcassets in Resources */,
 				185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */,
 				18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */,
 				F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */,
-				F5EACE3B1AC4A2130006D7AF /* som_cachorro.mp3 in Resources */,
-				F5EACE3F1AC4A2130006D7AF /* som_gato.mp3 in Resources */,
+				186D116D1AC4AB5E00877B0D /* som_cachorro.mp3 in Resources */,
+				186D11711AC4AB5E00877B0D /* som_gato.mp3 in Resources */,
 				18AAAA301AC47C5F00D27E14 /* bt_foca.png in Resources */,
 				185F92811AC3599A00A9A01C /* bt_macaco.png in Resources */,
-				F5EACE441AC4A2130006D7AF /* som_vaca.mp3 in Resources */,
-				F5EACE421AC4A2130006D7AF /* som_ovelha.mp3 in Resources */,
+				186D11761AC4AB5E00877B0D /* som_vaca.mp3 in Resources */,
+				186D11741AC4AB5E00877B0D /* som_ovelha.mp3 in Resources */,
 				185F927D1AC3599A00A9A01C /* bt_cachorro.png in Resources */,
 				185F927C1AC3599A00A9A01C /* bt_burro.png in Resources */,
-				F5EACE3E1AC4A2130006D7AF /* som_galo.mp3 in Resources */,
+				186D11701AC4AB5E00877B0D /* som_galo.mp3 in Resources */,
 				18AAAA331AC47C5F00D27E14 /* bt_serpente.png in Resources */,
-				F5EACE431AC4A2130006D7AF /* som_serpente.mp3 in Resources */,
-				F5EACE401AC4A2130006D7AF /* som_leopardo.mp3 in Resources */,
+				186D11751AC4AB5E00877B0D /* som_serpente.mp3 in Resources */,
+				186D11721AC4AB5E00877B0D /* som_leopardo.mp3 in Resources */,
 				181D56C11ABDB90600D252BC /* Images.xcassets in Resources */,
 				185F92801AC3599A00A9A01C /* bt_gato.png in Resources */,
-				F5EACE3D1AC4A2130006D7AF /* som_foca.mp3 in Resources */,
+				186D116F1AC4AB5E00877B0D /* som_foca.mp3 in Resources */,
 				185F927E1AC3599A00A9A01C /* bt_elefante.png in Resources */,
-				F5EACE3A1AC4A2130006D7AF /* som_burro.mp3 in Resources */,
+				186D116C1AC4AB5E00877B0D /* som_burro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

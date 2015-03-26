@@ -9,6 +9,7 @@
 #import "CIRSoundTestViewController.h"
 #import "SoundManager.h"
 #import "CIRSoundImage.h"
+#import "AudioToolbox/AudioToolbox.h"
 
 @interface CIRSoundTestViewController ()
 {
@@ -32,19 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view from its nib.
-    
     [self setLoseLabel:[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)]];
     [[self loseLabel] setCenter:self.view.center];
-    
-    CGRect frame = [[self loseLabel] frame];
-    frame.origin.y = self.view.frame.size.height + frame.size.height;
-    [[self loseLabel] setFrame:frame];
-    
-    [[self loseLabel] setText:@"ERROU!"];
-    
-    //[[self loseLabel] setFont:()]
-    [self.view addSubview:[self loseLabel]];
     
     self.files = [[CIRSoundImage alloc] init];
     
@@ -60,9 +50,6 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
     imagemPadrao = [UIImage imageNamed:@"novacor.png"];
     
-    NSLog(@"Sounds: %@ // %zd", self.files.sounds, [self.files.sounds count]);
-    NSLog(@"Images: %@ // %zd", self.files.images, [self.files.images count]);
-    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -76,9 +63,9 @@
 
 - (IBAction)playOnTouch:(UIButton *)sender{
     [[SoundManager sharedManager] stopAllSounds];
-    if(!inGame)
+    if(!inGame){
         [self nextLevel];
-    else {
+    } else {
         [[SoundManager sharedManager] playSound:answerSound.name];
     }
 }
@@ -90,7 +77,8 @@
     
     // Criando um novo som
     answerSound = [[Sound alloc] initWithContentsOfFile:self.files.sounds[answerIndex]];
-    [[SoundManager sharedManager] playSound:answerSound.name];
+    if(inGame)
+        [[SoundManager sharedManager] playSound:answerSound.name];
     
     // Gerando um numero aleatorio (0 ... 3)
     answerIndexOnArray = arc4random() % (4);
@@ -132,34 +120,50 @@
 
 
 - (IBAction) optionOnTouch:(UIButton*) sender{
-    if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
-        NSLog(@"Certa resposta!");
-        
-        score+=50;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
-        [self.scoreLabel setNeedsDisplay];
-        [self nextLevel];
-        
-    } else {
-        NSLog(@"Errou!");
-        
-        [UIView animateWithDuration:1.0 animations:^{
+    if (inGame){
+        if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
+            NSLog(@"Certo!");
             
-            [[self loseLabel] setCenter:[self.view center]];
+            [self changeScoreColor:[UIColor greenColor] :0.25];
+            [self performSelector:@selector(greenToWhite) withObject:nil afterDelay:0.5];
             
-        }];
-        
-        [self performSelector:@selector(removeLoseLabelFromScreen) withObject:nil afterDelay:3.0];
-        [self newGame];
+            score+=50;
+            self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
+            [self.scoreLabel setNeedsDisplay];
+            [self nextLevel];
+            
+        } else {
+            NSLog(@"Errado!");
+            
+            [self changeScoreColor:[UIColor redColor] :0.25];
+            [self performSelector:@selector(redToWhite) withObject:nil afterDelay:1];
+            
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+            inGame = NO;
+            [self newGame];
+        }
     }
 }
 
--(void)removeLoseLabelFromScreen {
-    
-    CGRect frame = [[self loseLabel] frame];
-    frame.origin.y = self.view.frame.size.height + frame.size.height;
-    [[self loseLabel] setFrame:frame];
-    
+- (void) greenToWhite {
+    [UIView transitionWithView:self.view duration:0.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.scoreLabel setTextColor:[UIColor whiteColor]];
+        [self.scoreLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
+}
+
+- (void) redToWhite {
+    [UIView transitionWithView:self.view duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.scoreLabel setTextColor:[UIColor whiteColor]];
+        [self.scoreLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
+}
+
+- (void) changeScoreColor :(UIColor *) textColor :(float) segundos {
+    [UIView transitionWithView:self.view duration:segundos options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.scoreLabel setTextColor:textColor];
+        [self.scoreLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
 }
 
 /*
