@@ -37,6 +37,9 @@
 		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
 		351F30841AC335D7009F9D54 /* novacor.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30831AC335D7009F9D54 /* novacor.png */; };
 		351F30861AC344B8009F9D54 /* funwithanimals.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30851AC344B8009F9D54 /* funwithanimals.png */; };
+		F5CF82D11AC480440086A49B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D01AC480440086A49B /* logo.png */; };
+		F5CF82D31AC481280086A49B /* app-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D21AC481280086A49B /* app-120.png */; };
+		F5CF82D51AC481BE0086A49B /* app-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D41AC481BE0086A49B /* app-180.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRSoundTestViewController.xib; sourceTree = "<group>"; };
 		351F30831AC335D7009F9D54 /* novacor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novacor.png; sourceTree = "<group>"; };
 		351F30851AC344B8009F9D54 /* funwithanimals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funwithanimals.png; sourceTree = "<group>"; };
+		F5CF82D01AC480440086A49B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F5CF82D21AC481280086A49B /* app-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-120.png"; sourceTree = "<group>"; };
+		F5CF82D41AC481BE0086A49B /* app-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-180.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +265,9 @@
 		351F30891AC3549F009F9D54 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
+				F5CF82D41AC481BE0086A49B /* app-180.png */,
+				F5CF82D21AC481280086A49B /* app-120.png */,
+				F5CF82D01AC480440086A49B /* logo.png */,
 				351F30851AC344B8009F9D54 /* funwithanimals.png */,
 			);
 			name = Icones;
@@ -375,11 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				185F927F1AC3599A00A9A01C /* bt_galo.png in Resources */,
+				F5CF82D11AC480440086A49B /* logo.png in Resources */,
 				181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */,
 				185F92741AC3585100A9A01C /* backgroundImage.gif in Resources */,
 				185F928C1AC359F000A9A01C /* som_burro.mp3 in Resources */,
 				18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */,
+				F5CF82D51AC481BE0086A49B /* app-180.png in Resources */,
 				185F92721AC3583600A9A01C /* backgroundMusic.mp3 in Resources */,
+				F5CF82D31AC481280086A49B /* app-120.png in Resources */,
 				351F30841AC335D7009F9D54 /* novacor.png in Resources */,
 				185F92921AC359F000A9A01C /* som_vaca.mp3 in Resources */,
 				185F92901AC359F000A9A01C /* som_gato.mp3 in Resources */,
