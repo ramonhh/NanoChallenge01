@@ -19,7 +19,7 @@
     // Propriedades auxiliares
     NSUInteger answerIndex;
     NSUInteger answerIndexOnArray;
-    NSUInteger score;
+    NSUInteger score, highScore;
     UIImage *answerImage, *imagemPadrao;
     Sound *answerSound;
 }
@@ -32,9 +32,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self setLoseLabel:[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)]];
-    [[self loseLabel] setCenter:self.view.center];
     
     self.files = [[CIRSoundImage alloc] init];
     
@@ -49,6 +46,10 @@
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
     imagemPadrao = [UIImage imageNamed:@"novacor.png"];
+    
+    // Snippet used to get your highscore from the prefs.
+    highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] integerValue];
+    self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
     
 }
 
@@ -140,6 +141,14 @@
             
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
             inGame = NO;
+            
+            if (score > highScore){
+                highScore = score;
+                [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:highScore] forKey:@"HighScore"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
+            }
+            
             [self newGame];
         }
     }

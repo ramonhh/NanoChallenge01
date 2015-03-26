@@ -12,5 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UIButton *option1, *option2, *option3, *option4;
 @property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel *highScoreLabel;
 
 @end
