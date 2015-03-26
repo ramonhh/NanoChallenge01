@@ -109,6 +109,32 @@
             answerOnView = YES;
         }
     }
+    
+    
+//    long indexRestante;
+//    NSMutableArray *posicoes = [NSMutableArray array];
+//    [posicoes addObject:[NSNumber numberWithLong:answerIndex]];
+//    
+//    for (UIButton *b in _buttonArray) {
+//        if (![b isEqual:_buttonArray[answerIndexOnArray]]) {
+//            indexRestante = arc4random() % [self.files.sounds count];
+//            NSLog(@"indexRestante random: %ld", indexRestante);
+//            for (int i = 0; i < posicoes.count; i++) {
+//                if ([posicoes[i] longValue] == indexRestante) {
+//                    NSLog(@"--- %ld ja encontrado", indexRestante);
+//                    indexRestante = arc4random() % [self.files.sounds count];
+//                    NSLog(@"Novo valor: %ld", indexRestante);
+//                    i = 0;
+//                }
+//            }
+//            
+//            UIImage *img = [UIImage imageNamed:self.files.images[indexRestante]];
+//            [posicoes addObject:[NSNumber numberWithLong:indexRestante]];
+//            
+//            [b setImage:img forState:UIControlStateNormal];
+//        }
+//    }
+    
     inGame = YES;
 }
 
@@ -130,7 +156,6 @@
     } else {
         NSLog(@"Errou!");
         [self newGame];
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     }
 }
 

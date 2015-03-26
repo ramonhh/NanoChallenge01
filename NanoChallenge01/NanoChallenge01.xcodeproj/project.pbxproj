@@ -39,7 +39,6 @@
 		18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */; };
 		18AAAA321AC47C5F00D27E14 /* bt_ovelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */; };
 		18AAAA331AC47C5F00D27E14 /* bt_serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2F1AC47C5F00D27E14 /* bt_serpente.png */; };
-		18C4F1961AC4876500152862 /* bgTeste.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C4F1951AC4876500152862 /* bgTeste.png */; };
 		18CE95DC1AC25A8E00346E40 /* CIRSoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */; };
 		18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */; };
 		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
@@ -68,7 +67,7 @@
 		1803C7051ABF554D00D4C487 /* CIRSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSound.m; sourceTree = "<group>"; };
 		1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundLibrary.h; sourceTree = "<group>"; };
 		1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundLibrary.m; sourceTree = "<group>"; };
-		181D56B61ABDB90600D252BC /* NanoChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D56B61ABDB90600D252BC /* Anquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D56BA1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D56BB1ABDB90600D252BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		181D56BD1ABDB90600D252BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,7 +101,6 @@
 		18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_leopardo.png; sourceTree = "<group>"; };
 		18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_ovelha.png; sourceTree = "<group>"; };
 		18AAAA2F1AC47C5F00D27E14 /* bt_serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_serpente.png; sourceTree = "<group>"; };
-		18C4F1951AC4876500152862 /* bgTeste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgTeste.png; sourceTree = "<group>"; };
 		18CE95DA1AC25A8E00346E40 /* CIRSoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundImage.h; sourceTree = "<group>"; };
 		18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundImage.m; sourceTree = "<group>"; };
 		18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundTestViewController.h; sourceTree = "<group>"; };
@@ -184,7 +182,7 @@
 		181D56B71ABDB90600D252BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				181D56B61ABDB90600D252BC /* NanoChallenge01.app */,
+				181D56B61ABDB90600D252BC /* Anquiz.app */,
 				181D56C91ABDB90600D252BC /* NanoChallenge01Tests.xctest */,
 			);
 			name = Products;
@@ -278,11 +276,7 @@
 		351F30721AC324F3009F9D54 /* background */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
 				F5CF82D61AC489850086A49B /* fazenda-background.png */,
-=======
-				18C4F1951AC4876500152862 /* bgTeste.png */,
->>>>>>> Stashed changes
 				185F92731AC3585100A9A01C /* backgroundImage.gif */,
 			);
 			name = background;
@@ -350,7 +344,7 @@
 			);
 			name = NanoChallenge01;
 			productName = NanoChallenge01;
-			productReference = 181D56B61ABDB90600D252BC /* NanoChallenge01.app */;
+			productReference = 181D56B61ABDB90600D252BC /* Anquiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 		181D56C81ABDB90600D252BC /* NanoChallenge01Tests */ = {
@@ -382,7 +376,6 @@
 				TargetAttributes = {
 					181D56B51ABDB90600D252BC = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 5EX2K3NNES;
 					};
 					181D56C81ABDB90600D252BC = {
 						CreatedOnToolsVersion = 6.2;
@@ -429,7 +422,6 @@
 				185F92901AC359F000A9A01C /* som_gato.mp3 in Resources */,
 				18AAAA2B1AC47B3400D27E14 /* som_ovelha.mp3 in Resources */,
 				18AAAA291AC47B3400D27E14 /* som_foca.mp3 in Resources */,
-				18C4F1961AC4876500152862 /* bgTeste.png in Resources */,
 				189543BC1AC4805B00EB806C /* som_serpente.mp3 in Resources */,
 				185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */,
 				18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */,
@@ -588,7 +580,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NanoChallenge01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01;
+				PRODUCT_NAME = Anquiz;
 			};
 			name = Debug;
 		};
@@ -599,7 +591,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NanoChallenge01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01;
+				PRODUCT_NAME = Anquiz;
 			};
 			name = Release;
 		};
@@ -617,7 +609,7 @@
 				);
 				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
 			};
 			name = Debug;
@@ -632,7 +624,7 @@
 				);
 				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
 			};
 			name = Release;
