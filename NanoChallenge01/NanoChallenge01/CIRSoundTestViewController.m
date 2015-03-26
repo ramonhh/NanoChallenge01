@@ -44,7 +44,7 @@
     inGame = NO;
     
     score = 0;
-    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    self.scoreLabel.text = @"";
     imagemPadrao = [UIImage imageNamed:@"novacor.png"];
     
     // Snippet used to get your highscore from the prefs.
@@ -66,6 +66,8 @@
     [[SoundManager sharedManager] stopAllSounds];
     if(!inGame){
         [self nextLevel];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+        [sender setTitle:@"     Play Sound     " forState:UIControlStateNormal];
     } else {
         [[SoundManager sharedManager] playSound:answerSound.name];
     }
@@ -116,6 +118,7 @@
 - (void) newGame {
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    self.highScoreLabel.textColor = [UIColor whiteColor];
     [self nextLevel];
 }
 
@@ -132,6 +135,11 @@
             self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
             [self.scoreLabel setNeedsDisplay];
             [self nextLevel];
+            
+            if(score > highScore){
+                self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:score]];
+                self.highScoreLabel.textColor = [UIColor greenColor];
+            }
             
         } else {
             NSLog(@"Errado!");
