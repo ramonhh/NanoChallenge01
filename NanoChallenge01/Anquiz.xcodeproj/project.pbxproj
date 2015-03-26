@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1803C7001ABF41ED00D4C487 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C6FF1ABF41ED00D4C487 /* SoundManager.m */; };
+		1803C7061ABF554D00D4C487 /* CIRSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C7051ABF554D00D4C487 /* CIRSound.m */; };
+		1803C7091ABF584400D4C487 /* CIRSoundLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */; };
+		181D56BC1ABDB90600D252BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56BB1ABDB90600D252BC /* main.m */; };
+		181D56BF1ABDB90600D252BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56BE1ABDB90600D252BC /* AppDelegate.m */; };
+		181D56C11ABDB90600D252BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D56C01ABDB90600D252BC /* Images.xcassets */; };
+		181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D56C21ABDB90600D252BC /* LaunchScreen.xib */; };
+		181D56D01ABDB90600D252BC /* NanoChallenge01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */; };
+		185F92741AC3585100A9A01C /* backgroundImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 185F92731AC3585100A9A01C /* backgroundImage.gif */; };
+		185F927C1AC3599A00A9A01C /* bt_burro.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92751AC3599A00A9A01C /* bt_burro.png */; };
+		185F927D1AC3599A00A9A01C /* bt_cachorro.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92761AC3599A00A9A01C /* bt_cachorro.png */; };
+		185F927E1AC3599A00A9A01C /* bt_elefante.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92771AC3599A00A9A01C /* bt_elefante.png */; };
+		185F927F1AC3599A00A9A01C /* bt_galo.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92781AC3599A00A9A01C /* bt_galo.png */; };
+		185F92801AC3599A00A9A01C /* bt_gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F92791AC3599A00A9A01C /* bt_gato.png */; };
+		185F92811AC3599A00A9A01C /* bt_macaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F927A1AC3599A00A9A01C /* bt_macaco.png */; };
+		185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F927B1AC3599A00A9A01C /* bt_vaca.png */; };
+		185F928C1AC359F000A9A01C /* som_burro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F92851AC359F000A9A01C /* som_burro.mp3 */; };
+		185F928D1AC359F000A9A01C /* som_cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F92861AC359F000A9A01C /* som_cachorro.mp3 */; };
+		185F928E1AC359F000A9A01C /* som_elefante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F92871AC359F000A9A01C /* som_elefante.mp3 */; };
+		185F928F1AC359F000A9A01C /* som_galo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F92881AC359F000A9A01C /* som_galo.mp3 */; };
+		185F92901AC359F000A9A01C /* som_gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F92891AC359F000A9A01C /* som_gato.mp3 */; };
+		185F92911AC359F000A9A01C /* som_macaco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F928A1AC359F000A9A01C /* som_macaco.mp3 */; };
+		185F92921AC359F000A9A01C /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 185F928B1AC359F000A9A01C /* som_vaca.mp3 */; };
+		189543BC1AC4805B00EB806C /* som_serpente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189543BB1AC4805B00EB806C /* som_serpente.mp3 */; };
+		18AAAA291AC47B3400D27E14 /* som_foca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA251AC47B3400D27E14 /* som_foca.mp3 */; };
+		18AAAA2A1AC47B3400D27E14 /* som_leopardo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA261AC47B3400D27E14 /* som_leopardo.mp3 */; };
+		18AAAA2B1AC47B3400D27E14 /* som_ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA271AC47B3400D27E14 /* som_ovelha.mp3 */; };
+		18AAAA301AC47C5F00D27E14 /* bt_foca.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2C1AC47C5F00D27E14 /* bt_foca.png */; };
+		18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */; };
+		18AAAA321AC47C5F00D27E14 /* bt_ovelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */; };
+		18AAAA331AC47C5F00D27E14 /* bt_serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AAAA2F1AC47C5F00D27E14 /* bt_serpente.png */; };
+		18CE95DC1AC25A8E00346E40 /* CIRSoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */; };
+		18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */; };
+		18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */; };
+		351F30841AC335D7009F9D54 /* novacor.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30831AC335D7009F9D54 /* novacor.png */; };
+		351F30861AC344B8009F9D54 /* funwithanimals.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F30851AC344B8009F9D54 /* funwithanimals.png */; };
+		354CA0711AC4857E002990DD /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 354CA0701AC4857E002990DD /* backgroundMusic.mp3 */; };
+		357D3ED31AC4847E0001D8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357D3ED21AC4847E0001D8FB /* Images.xcassets */; };
+		F5CF82D11AC480440086A49B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D01AC480440086A49B /* logo.png */; };
+		F5CF82D31AC481280086A49B /* app-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D21AC481280086A49B /* app-120.png */; };
+		F5CF82D51AC481BE0086A49B /* app-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D41AC481BE0086A49B /* app-180.png */; };
+		F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D61AC489850086A49B /* fazenda-background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		181D56CA1ABDB90600D252BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181D56AE1ABDB90600D252BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181D56B51ABDB90600D252BC;
+			remoteInfo = NanoChallenge01;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1803C6FE1ABF41ED00D4C487 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		1803C6FF1ABF41ED00D4C487 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		1803C7041ABF554D00D4C487 /* CIRSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSound.h; sourceTree = "<group>"; };
+		1803C7051ABF554D00D4C487 /* CIRSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSound.m; sourceTree = "<group>"; };
+		1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundLibrary.h; sourceTree = "<group>"; };
+		1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundLibrary.m; sourceTree = "<group>"; };
+		181D56B61ABDB90600D252BC /* Anquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D56BA1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181D56BB1ABDB90600D252BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		181D56BD1ABDB90600D252BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		181D56BE1ABDB90600D252BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		181D56C01ABDB90600D252BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		181D56C31ABDB90600D252BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		181D56C91ABDB90600D252BC /* AnquizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnquizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D56CE1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NanoChallenge01Tests.m; sourceTree = "<group>"; };
+		185F92731AC3585100A9A01C /* backgroundImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backgroundImage.gif; sourceTree = "<group>"; };
+		185F92751AC3599A00A9A01C /* bt_burro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_burro.png; sourceTree = "<group>"; };
+		185F92761AC3599A00A9A01C /* bt_cachorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_cachorro.png; sourceTree = "<group>"; };
+		185F92771AC3599A00A9A01C /* bt_elefante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_elefante.png; sourceTree = "<group>"; };
+		185F92781AC3599A00A9A01C /* bt_galo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_galo.png; sourceTree = "<group>"; };
+		185F92791AC3599A00A9A01C /* bt_gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_gato.png; sourceTree = "<group>"; };
+		185F927A1AC3599A00A9A01C /* bt_macaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_macaco.png; sourceTree = "<group>"; };
+		185F927B1AC3599A00A9A01C /* bt_vaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_vaca.png; sourceTree = "<group>"; };
+		185F92851AC359F000A9A01C /* som_burro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_burro.mp3; sourceTree = "<group>"; };
+		185F92861AC359F000A9A01C /* som_cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_cachorro.mp3; sourceTree = "<group>"; };
+		185F92871AC359F000A9A01C /* som_elefante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_elefante.mp3; sourceTree = "<group>"; };
+		185F92881AC359F000A9A01C /* som_galo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_galo.mp3; sourceTree = "<group>"; };
+		185F92891AC359F000A9A01C /* som_gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_gato.mp3; sourceTree = "<group>"; };
+		185F928A1AC359F000A9A01C /* som_macaco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_macaco.mp3; sourceTree = "<group>"; };
+		185F928B1AC359F000A9A01C /* som_vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_vaca.mp3; sourceTree = "<group>"; };
+		189543BB1AC4805B00EB806C /* som_serpente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_serpente.mp3; sourceTree = "<group>"; };
+		18AAAA251AC47B3400D27E14 /* som_foca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_foca.mp3; sourceTree = "<group>"; };
+		18AAAA261AC47B3400D27E14 /* som_leopardo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_leopardo.mp3; sourceTree = "<group>"; };
+		18AAAA271AC47B3400D27E14 /* som_ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_ovelha.mp3; sourceTree = "<group>"; };
+		18AAAA2C1AC47C5F00D27E14 /* bt_foca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_foca.png; sourceTree = "<group>"; };
+		18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_leopardo.png; sourceTree = "<group>"; };
+		18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_ovelha.png; sourceTree = "<group>"; };
+		18AAAA2F1AC47C5F00D27E14 /* bt_serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_serpente.png; sourceTree = "<group>"; };
+		18CE95DA1AC25A8E00346E40 /* CIRSoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundImage.h; sourceTree = "<group>"; };
+		18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundImage.m; sourceTree = "<group>"; };
+		18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundTestViewController.h; sourceTree = "<group>"; };
+		18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundTestViewController.m; sourceTree = "<group>"; };
+		18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRSoundTestViewController.xib; sourceTree = "<group>"; };
+		351F30831AC335D7009F9D54 /* novacor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novacor.png; sourceTree = "<group>"; };
+		351F30851AC344B8009F9D54 /* funwithanimals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funwithanimals.png; sourceTree = "<group>"; };
+		354CA0701AC4857E002990DD /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		357D3ED21AC4847E0001D8FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Anquiz/Images.xcassets; sourceTree = "<group>"; };
+		F5CF82D01AC480440086A49B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F5CF82D21AC481280086A49B /* app-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-120.png"; sourceTree = "<group>"; };
+		F5CF82D41AC481BE0086A49B /* app-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-180.png"; sourceTree = "<group>"; };
+		F5CF82D61AC489850086A49B /* fazenda-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fazenda-background.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181D56B31ABDB90600D252BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181D56C61ABDB90600D252BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1801BB9C1ABF3F310031C4D4 /* xibFiles */ = {
+			isa = PBXGroup;
+			children = (
+				181D56C21ABDB90600D252BC /* LaunchScreen.xib */,
+				18FF0EA21ABF130700BB4E0B /* CIRSoundTestViewController.xib */,
+			);
+			name = xibFiles;
+			sourceTree = "<group>";
+		};
+		1801BB9E1ABF3F6E0031C4D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18FF0EA01ABF130700BB4E0B /* CIRSoundTestViewController.h */,
+				18FF0EA11ABF130700BB4E0B /* CIRSoundTestViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1803C6FD1ABF41ED00D4C487 /* SoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				1803C6FE1ABF41ED00D4C487 /* SoundManager.h */,
+				1803C6FF1ABF41ED00D4C487 /* SoundManager.m */,
+			);
+			path = SoundManager;
+			sourceTree = "<group>";
+		};
+		1803C7011ABF507C00D4C487 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				185F92841AC359F000A9A01C /* Animais */,
+				351F308B1AC354E9009F9D54 /* Backmusic */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		181D56AD1ABDB90600D252BC = {
+			isa = PBXGroup;
+			children = (
+				357D3ED21AC4847E0001D8FB /* Images.xcassets */,
+				181D56B81ABDB90600D252BC /* NanoChallenge01 */,
+				18FF0EAD1ABF181E00BB4E0B /* images */,
+				1803C7011ABF507C00D4C487 /* sounds */,
+				181D56CC1ABDB90600D252BC /* NanoChallenge01Tests */,
+				181D56B71ABDB90600D252BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181D56B71ABDB90600D252BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181D56B61ABDB90600D252BC /* Anquiz.app */,
+				181D56C91ABDB90600D252BC /* AnquizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181D56B81ABDB90600D252BC /* NanoChallenge01 */ = {
+			isa = PBXGroup;
+			children = (
+				1803C6FD1ABF41ED00D4C487 /* SoundManager */,
+				1801BB9C1ABF3F310031C4D4 /* xibFiles */,
+				1801BB9E1ABF3F6E0031C4D4 /* ViewControllers */,
+				18CE95D61AC258E700346E40 /* CIRTestes */,
+				181D56BD1ABDB90600D252BC /* AppDelegate.h */,
+				181D56BE1ABDB90600D252BC /* AppDelegate.m */,
+				181D56C01ABDB90600D252BC /* Images.xcassets */,
+				181D56B91ABDB90600D252BC /* Supporting Files */,
+				18CE95DA1AC25A8E00346E40 /* CIRSoundImage.h */,
+				18CE95DB1AC25A8E00346E40 /* CIRSoundImage.m */,
+			);
+			path = NanoChallenge01;
+			sourceTree = "<group>";
+		};
+		181D56B91ABDB90600D252BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				181D56BA1ABDB90600D252BC /* Info.plist */,
+				181D56BB1ABDB90600D252BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		181D56CC1ABDB90600D252BC /* NanoChallenge01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */,
+				181D56CD1ABDB90600D252BC /* Supporting Files */,
+			);
+			path = NanoChallenge01Tests;
+			sourceTree = "<group>";
+		};
+		181D56CD1ABDB90600D252BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				181D56CE1ABDB90600D252BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185F92841AC359F000A9A01C /* Animais */ = {
+			isa = PBXGroup;
+			children = (
+				18AAAA251AC47B3400D27E14 /* som_foca.mp3 */,
+				189543BB1AC4805B00EB806C /* som_serpente.mp3 */,
+				18AAAA261AC47B3400D27E14 /* som_leopardo.mp3 */,
+				18AAAA271AC47B3400D27E14 /* som_ovelha.mp3 */,
+				185F92851AC359F000A9A01C /* som_burro.mp3 */,
+				185F92861AC359F000A9A01C /* som_cachorro.mp3 */,
+				185F92871AC359F000A9A01C /* som_elefante.mp3 */,
+				185F92881AC359F000A9A01C /* som_galo.mp3 */,
+				185F92891AC359F000A9A01C /* som_gato.mp3 */,
+				185F928A1AC359F000A9A01C /* som_macaco.mp3 */,
+				185F928B1AC359F000A9A01C /* som_vaca.mp3 */,
+			);
+			name = Animais;
+			path = NanoChallenge01/Sons;
+			sourceTree = "<group>";
+		};
+		18CE95D61AC258E700346E40 /* CIRTestes */ = {
+			isa = PBXGroup;
+			children = (
+				1803C7041ABF554D00D4C487 /* CIRSound.h */,
+				1803C7051ABF554D00D4C487 /* CIRSound.m */,
+				1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */,
+				1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */,
+			);
+			name = CIRTestes;
+			sourceTree = "<group>";
+		};
+		18FF0EAD1ABF181E00BB4E0B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				351F308A1AC354B8009F9D54 /* Interrogacao */,
+				351F30891AC3549F009F9D54 /* Icones */,
+				351F30721AC324F3009F9D54 /* background */,
+				F5CD492D1AC31B4B00F270FA /* Animais */,
+			);
+			name = images;
+			path = NanoChallenge01;
+			sourceTree = "<group>";
+		};
+		351F30721AC324F3009F9D54 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				F5CF82D61AC489850086A49B /* fazenda-background.png */,
+				185F92731AC3585100A9A01C /* backgroundImage.gif */,
+			);
+			name = background;
+			sourceTree = "<group>";
+		};
+		351F30891AC3549F009F9D54 /* Icones */ = {
+			isa = PBXGroup;
+			children = (
+				F5CF82D41AC481BE0086A49B /* app-180.png */,
+				F5CF82D21AC481280086A49B /* app-120.png */,
+				F5CF82D01AC480440086A49B /* logo.png */,
+				351F30851AC344B8009F9D54 /* funwithanimals.png */,
+			);
+			name = Icones;
+			sourceTree = "<group>";
+		};
+		351F308A1AC354B8009F9D54 /* Interrogacao */ = {
+			isa = PBXGroup;
+			children = (
+				351F30831AC335D7009F9D54 /* novacor.png */,
+			);
+			name = Interrogacao;
+			sourceTree = "<group>";
+		};
+		351F308B1AC354E9009F9D54 /* Backmusic */ = {
+			isa = PBXGroup;
+			children = (
+				354CA0701AC4857E002990DD /* backgroundMusic.mp3 */,
+			);
+			name = Backmusic;
+			sourceTree = "<group>";
+		};
+		F5CD492D1AC31B4B00F270FA /* Animais */ = {
+			isa = PBXGroup;
+			children = (
+				18AAAA2C1AC47C5F00D27E14 /* bt_foca.png */,
+				18AAAA2D1AC47C5F00D27E14 /* bt_leopardo.png */,
+				18AAAA2E1AC47C5F00D27E14 /* bt_ovelha.png */,
+				18AAAA2F1AC47C5F00D27E14 /* bt_serpente.png */,
+				185F92751AC3599A00A9A01C /* bt_burro.png */,
+				185F92761AC3599A00A9A01C /* bt_cachorro.png */,
+				185F92771AC3599A00A9A01C /* bt_elefante.png */,
+				185F92781AC3599A00A9A01C /* bt_galo.png */,
+				185F92791AC3599A00A9A01C /* bt_gato.png */,
+				185F927A1AC3599A00A9A01C /* bt_macaco.png */,
+				185F927B1AC3599A00A9A01C /* bt_vaca.png */,
+			);
+			path = Animais;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181D56B51ABDB90600D252BC /* Anquiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "Anquiz" */;
+			buildPhases = (
+				181D56B21ABDB90600D252BC /* Sources */,
+				181D56B31ABDB90600D252BC /* Frameworks */,
+				181D56B41ABDB90600D252BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anquiz;
+			productName = NanoChallenge01;
+			productReference = 181D56B61ABDB90600D252BC /* Anquiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		181D56C81ABDB90600D252BC /* AnquizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "AnquizTests" */;
+			buildPhases = (
+				181D56C51ABDB90600D252BC /* Sources */,
+				181D56C61ABDB90600D252BC /* Frameworks */,
+				181D56C71ABDB90600D252BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181D56CB1ABDB90600D252BC /* PBXTargetDependency */,
+			);
+			name = AnquizTests;
+			productName = NanoChallenge01Tests;
+			productReference = 181D56C91ABDB90600D252BC /* AnquizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181D56AE1ABDB90600D252BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = CIR;
+				TargetAttributes = {
+					181D56B51ABDB90600D252BC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					181D56C81ABDB90600D252BC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 181D56B51ABDB90600D252BC;
+					};
+				};
+			};
+			buildConfigurationList = 181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Anquiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181D56AD1ABDB90600D252BC;
+			productRefGroup = 181D56B71ABDB90600D252BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181D56B51ABDB90600D252BC /* Anquiz */,
+				181D56C81ABDB90600D252BC /* AnquizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181D56B41ABDB90600D252BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185F927F1AC3599A00A9A01C /* bt_galo.png in Resources */,
+				F5CF82D11AC480440086A49B /* logo.png in Resources */,
+				181D56C41ABDB90600D252BC /* LaunchScreen.xib in Resources */,
+				185F92741AC3585100A9A01C /* backgroundImage.gif in Resources */,
+				354CA0711AC4857E002990DD /* backgroundMusic.mp3 in Resources */,
+				185F928C1AC359F000A9A01C /* som_burro.mp3 in Resources */,
+				18AAAA321AC47C5F00D27E14 /* bt_ovelha.png in Resources */,
+				18FF0EA41ABF130700BB4E0B /* CIRSoundTestViewController.xib in Resources */,
+				F5CF82D51AC481BE0086A49B /* app-180.png in Resources */,
+				F5CF82D31AC481280086A49B /* app-120.png in Resources */,
+				351F30841AC335D7009F9D54 /* novacor.png in Resources */,
+				185F92921AC359F000A9A01C /* som_vaca.mp3 in Resources */,
+				185F92901AC359F000A9A01C /* som_gato.mp3 in Resources */,
+				18AAAA2B1AC47B3400D27E14 /* som_ovelha.mp3 in Resources */,
+				18AAAA291AC47B3400D27E14 /* som_foca.mp3 in Resources */,
+				357D3ED31AC4847E0001D8FB /* Images.xcassets in Resources */,
+				189543BC1AC4805B00EB806C /* som_serpente.mp3 in Resources */,
+				185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */,
+				18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */,
+				F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */,
+				185F928F1AC359F000A9A01C /* som_galo.mp3 in Resources */,
+				185F928E1AC359F000A9A01C /* som_elefante.mp3 in Resources */,
+				18AAAA301AC47C5F00D27E14 /* bt_foca.png in Resources */,
+				185F92811AC3599A00A9A01C /* bt_macaco.png in Resources */,
+				185F927D1AC3599A00A9A01C /* bt_cachorro.png in Resources */,
+				18AAAA2A1AC47B3400D27E14 /* som_leopardo.mp3 in Resources */,
+				351F30861AC344B8009F9D54 /* funwithanimals.png in Resources */,
+				185F92911AC359F000A9A01C /* som_macaco.mp3 in Resources */,
+				185F927C1AC3599A00A9A01C /* bt_burro.png in Resources */,
+				18AAAA331AC47C5F00D27E14 /* bt_serpente.png in Resources */,
+				181D56C11ABDB90600D252BC /* Images.xcassets in Resources */,
+				185F928D1AC359F000A9A01C /* som_cachorro.mp3 in Resources */,
+				185F92801AC3599A00A9A01C /* bt_gato.png in Resources */,
+				185F927E1AC3599A00A9A01C /* bt_elefante.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181D56C71ABDB90600D252BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181D56B21ABDB90600D252BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181D56BF1ABDB90600D252BC /* AppDelegate.m in Sources */,
+				1803C7061ABF554D00D4C487 /* CIRSound.m in Sources */,
+				18CE95DC1AC25A8E00346E40 /* CIRSoundImage.m in Sources */,
+				1803C7091ABF584400D4C487 /* CIRSoundLibrary.m in Sources */,
+				181D56BC1ABDB90600D252BC /* main.m in Sources */,
+				1803C7001ABF41ED00D4C487 /* SoundManager.m in Sources */,
+				18FF0EA31ABF130700BB4E0B /* CIRSoundTestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181D56C51ABDB90600D252BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181D56D01ABDB90600D252BC /* NanoChallenge01Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		181D56CB1ABDB90600D252BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 181D56B51ABDB90600D252BC /* Anquiz */;
+			targetProxy = 181D56CA1ABDB90600D252BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		181D56C21ABDB90600D252BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181D56C31ABDB90600D252BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		181D56D11ABDB90600D252BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		181D56D21ABDB90600D252BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		181D56D41ABDB90600D252BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NanoChallenge01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Anquiz;
+			};
+			name = Debug;
+		};
+		181D56D51ABDB90600D252BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NanoChallenge01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Anquiz;
+			};
+			name = Release;
+		};
+		181D56D71ABDB90600D252BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = AnquizTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
+			};
+			name = Debug;
+		};
+		181D56D81ABDB90600D252BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = AnquizTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Anquiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181D56D11ABDB90600D252BC /* Debug */,
+				181D56D21ABDB90600D252BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "Anquiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181D56D41ABDB90600D252BC /* Debug */,
+				181D56D51ABDB90600D252BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "AnquizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181D56D71ABDB90600D252BC /* Debug */,
+				181D56D81ABDB90600D252BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181D56AE1ABDB90600D252BC /* Project object */;
+}

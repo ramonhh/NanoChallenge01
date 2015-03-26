@@ -31,7 +31,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
+    
+    [self setLoseLabel:[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)]];
+    [[self loseLabel] setCenter:self.view.center];
+    
+    CGRect frame = [[self loseLabel] frame];
+    frame.origin.y = self.view.frame.size.height + frame.size.height;
+    [[self loseLabel] setFrame:frame];
+    
+    [[self loseLabel] setText:@"ERROU!"];
+    
+    //[[self loseLabel] setFont:()]
+    [self.view addSubview:[self loseLabel]];
     
     self.files = [[CIRSoundImage alloc] init];
     
@@ -83,9 +96,6 @@
     answerIndexOnArray = arc4random() % (4);
     NSUInteger answerOnArrayAux = answerIndexOnArray;
     
-//    // Setando a imagem em uma posicao randomica (0 ... 3)
-//    answerImage = [UIImage imageNamed:self.files.images[answerIndex]];
-//    [_buttonArray[answerIndexOnArray] setImage:answerImage forState:UIControlStateNormal];
     
     NSMutableArray *imagesAlreadyOnView = [NSMutableArray array];
     [imagesAlreadyOnView addObject:@(answerIndex)];
@@ -110,39 +120,16 @@
         }
     }
     
-    
-//    long indexRestante;
-//    NSMutableArray *posicoes = [NSMutableArray array];
-//    [posicoes addObject:[NSNumber numberWithLong:answerIndex]];
-//    
-//    for (UIButton *b in _buttonArray) {
-//        if (![b isEqual:_buttonArray[answerIndexOnArray]]) {
-//            indexRestante = arc4random() % [self.files.sounds count];
-//            NSLog(@"indexRestante random: %ld", indexRestante);
-//            for (int i = 0; i < posicoes.count; i++) {
-//                if ([posicoes[i] longValue] == indexRestante) {
-//                    NSLog(@"--- %ld ja encontrado", indexRestante);
-//                    indexRestante = arc4random() % [self.files.sounds count];
-//                    NSLog(@"Novo valor: %ld", indexRestante);
-//                    i = 0;
-//                }
-//            }
-//            
-//            UIImage *img = [UIImage imageNamed:self.files.images[indexRestante]];
-//            [posicoes addObject:[NSNumber numberWithLong:indexRestante]];
-//            
-//            [b setImage:img forState:UIControlStateNormal];
-//        }
-//    }
-    
     inGame = YES;
 }
+
 
 - (void) newGame {
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
     [self nextLevel];
 }
+
 
 - (IBAction) optionOnTouch:(UIButton*) sender{
     if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
@@ -155,8 +142,24 @@
         
     } else {
         NSLog(@"Errou!");
+        
+        [UIView animateWithDuration:1.0 animations:^{
+            
+            [[self loseLabel] setCenter:[self.view center]];
+            
+        }];
+        
+        [self performSelector:@selector(removeLoseLabelFromScreen) withObject:nil afterDelay:3.0];
         [self newGame];
     }
+}
+
+-(void)removeLoseLabelFromScreen {
+    
+    CGRect frame = [[self loseLabel] frame];
+    frame.origin.y = self.view.frame.size.height + frame.size.height;
+    [[self loseLabel] setFrame:frame];
+    
 }
 
 /*
