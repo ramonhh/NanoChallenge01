@@ -107,10 +107,10 @@ NSString *const SoundDidFinishPlayingNotification = @"SoundDidFinishPlayingNotif
     
 #ifdef DEBUG
     
-    if ([URL isFileURL] && ![[NSFileManager defaultManager] fileExistsAtPath:[URL path]])
-    {
-        NSLog(@"Sound file '%@' does not exist", [URL path]);
-    }
+//    if ([URL isFileURL] && ![[NSFileManager defaultManager] fileExistsAtPath:[URL path]])
+//    {
+//        NSLog(@"Sound file '%@' does not exist", [URL path]);
+//    }
     
 #endif
     

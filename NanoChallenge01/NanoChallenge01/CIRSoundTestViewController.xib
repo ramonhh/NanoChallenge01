@@ -6,10 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CIRSoundTestViewController">
             <connections>
-                <outlet property="option1" destination="2fo-nh-Aox" id="d0V-9K-6Iv"/>
-                <outlet property="option2" destination="kyz-Pe-hax" id="b6b-Hv-zDf"/>
-                <outlet property="option3" destination="f6F-wZ-J6N" id="Op0-gX-qlN"/>
-                <outlet property="option4" destination="x0F-A0-rk6" id="xhW-iX-fSX"/>
+                <outlet property="option1" destination="2fo-nh-Aox" id="kGj-m9-KP8"/>
+                <outlet property="option2" destination="kyz-Pe-hax" id="Pw1-SN-RZl"/>
+                <outlet property="option3" destination="f6F-wZ-J6N" id="WJd-b5-TLt"/>
+                <outlet property="option4" destination="x0F-A0-rk6" id="5X5-X4-Pik"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,16 +32,16 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="playSound:" destination="-1" eventType="touchUpInside" id="eaj-xA-Rpb"/>
+                        <action selector="playOnTouch:" destination="-1" eventType="touchUpInside" id="huZ-cO-y93"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-nh-Aox">
                     <rect key="frame" x="50" y="334" width="102" height="102"/>
-                    <state key="normal" title="Option 01" image="novacor.png">
+                    <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
                     <rect key="frame" x="223" y="334" width="102" height="102"/>
                     <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,13 +49,13 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-wZ-J6N">
                     <rect key="frame" x="50" y="488" width="102" height="102"/>
-                    <state key="normal" title="Option 03" image="novacor.png">
+                    <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-A0-rk6">
                     <rect key="frame" x="223" y="488" width="102" height="102"/>
-                    <state key="normal" title="Option 04" image="novacor.png">
+                    <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>

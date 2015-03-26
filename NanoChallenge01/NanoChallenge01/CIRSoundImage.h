@@ -10,7 +10,10 @@
 
 @interface CIRSoundImage : NSObject
 
-@property (nonatomic, copy) NSString *soundName;
-@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSArray *images;
+@property (nonatomic, copy) NSArray *sounds;
+
+- (void) loadImages;
+- (void) loadSounds;
 
 @end

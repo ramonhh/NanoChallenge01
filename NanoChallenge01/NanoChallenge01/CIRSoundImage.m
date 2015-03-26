@@ -10,12 +10,36 @@
 
 @implementation CIRSoundImage
 
-- (NSString *) soundName {
-    return [NSString stringWithFormat:@"%@.mp3", _soundName];
+- (void) loadImages{
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self BEGINSWITH 'bt_'"];
+    NSArray *onlyPNGs = [dirContents filteredArrayUsingPredicate:fltr];
+    
+    _images = onlyPNGs;
+    //    NSLog(@"Imagens: %@", _images);
 }
 
-- (NSString *) imageName {
-    return [NSString stringWithFormat:@"%@.png", _imageName];
+- (void) loadSounds {
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self BEGINSWITH 'som_'"];
+    NSArray *onlyMP3 = [dirContents filteredArrayUsingPredicate:fltr];
+    
+    _sounds = onlyMP3;
+    //    NSLog(@"Sons: %@", _sounds);
+}
+
+- (id) init {
+    if (self = [super init]) {
+        [self loadImages];
+        [self loadSounds];
+    }
+    return self;
 }
 
 @end
