@@ -68,14 +68,14 @@
 		1803C7051ABF554D00D4C487 /* CIRSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSound.m; sourceTree = "<group>"; };
 		1803C7071ABF584400D4C487 /* CIRSoundLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRSoundLibrary.h; sourceTree = "<group>"; };
 		1803C7081ABF584400D4C487 /* CIRSoundLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRSoundLibrary.m; sourceTree = "<group>"; };
-		181D56B61ABDB90600D252BC /* NanoChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D56B61ABDB90600D252BC /* Anquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D56BA1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D56BB1ABDB90600D252BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		181D56BD1ABDB90600D252BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181D56BE1ABDB90600D252BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		181D56C01ABDB90600D252BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		181D56C31ABDB90600D252BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		181D56C91ABDB90600D252BC /* NanoChallenge01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoChallenge01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D56C91ABDB90600D252BC /* AnquizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnquizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D56CE1ABDB90600D252BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D56CF1ABDB90600D252BC /* NanoChallenge01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NanoChallenge01Tests.m; sourceTree = "<group>"; };
 		185F92731AC3585100A9A01C /* backgroundImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backgroundImage.gif; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 		181D56B71ABDB90600D252BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				181D56B61ABDB90600D252BC /* NanoChallenge01.app */,
-				181D56C91ABDB90600D252BC /* NanoChallenge01Tests.xctest */,
+				181D56B61ABDB90600D252BC /* Anquiz.app */,
+				181D56C91ABDB90600D252BC /* AnquizTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,9 +333,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		181D56B51ABDB90600D252BC /* NanoChallenge01 */ = {
+		181D56B51ABDB90600D252BC /* Anquiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "NanoChallenge01" */;
+			buildConfigurationList = 181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "Anquiz" */;
 			buildPhases = (
 				181D56B21ABDB90600D252BC /* Sources */,
 				181D56B31ABDB90600D252BC /* Frameworks */,
@@ -345,14 +345,14 @@
 			);
 			dependencies = (
 			);
-			name = NanoChallenge01;
+			name = Anquiz;
 			productName = NanoChallenge01;
-			productReference = 181D56B61ABDB90600D252BC /* NanoChallenge01.app */;
+			productReference = 181D56B61ABDB90600D252BC /* Anquiz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		181D56C81ABDB90600D252BC /* NanoChallenge01Tests */ = {
+		181D56C81ABDB90600D252BC /* AnquizTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "NanoChallenge01Tests" */;
+			buildConfigurationList = 181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "AnquizTests" */;
 			buildPhases = (
 				181D56C51ABDB90600D252BC /* Sources */,
 				181D56C61ABDB90600D252BC /* Frameworks */,
@@ -363,9 +363,9 @@
 			dependencies = (
 				181D56CB1ABDB90600D252BC /* PBXTargetDependency */,
 			);
-			name = NanoChallenge01Tests;
+			name = AnquizTests;
 			productName = NanoChallenge01Tests;
-			productReference = 181D56C91ABDB90600D252BC /* NanoChallenge01Tests.xctest */;
+			productReference = 181D56C91ABDB90600D252BC /* AnquizTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -386,7 +386,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "NanoChallenge01" */;
+			buildConfigurationList = 181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Anquiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -399,8 +399,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				181D56B51ABDB90600D252BC /* NanoChallenge01 */,
-				181D56C81ABDB90600D252BC /* NanoChallenge01Tests */,
+				181D56B51ABDB90600D252BC /* Anquiz */,
+				181D56C81ABDB90600D252BC /* AnquizTests */,
 			);
 		};
 /* End PBXProject section */
@@ -484,7 +484,7 @@
 /* Begin PBXTargetDependency section */
 		181D56CB1ABDB90600D252BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 181D56B51ABDB90600D252BC /* NanoChallenge01 */;
+			target = 181D56B51ABDB90600D252BC /* Anquiz */;
 			targetProxy = 181D56CA1ABDB90600D252BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -585,7 +585,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NanoChallenge01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01;
+				PRODUCT_NAME = Anquiz;
 			};
 			name = Debug;
 		};
@@ -597,7 +597,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NanoChallenge01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01;
+				PRODUCT_NAME = Anquiz;
 			};
 			name = Release;
 		};
@@ -615,7 +615,7 @@
 				);
 				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01Tests;
+				PRODUCT_NAME = AnquizTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
 			};
 			name = Debug;
@@ -630,7 +630,7 @@
 				);
 				INFOPLIST_FILE = NanoChallenge01Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = NanoChallenge01Tests;
+				PRODUCT_NAME = AnquizTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoChallenge01.app/NanoChallenge01";
 			};
 			name = Release;
@@ -638,7 +638,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "NanoChallenge01" */ = {
+		181D56B11ABDB90600D252BC /* Build configuration list for PBXProject "Anquiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181D56D11ABDB90600D252BC /* Debug */,
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "NanoChallenge01" */ = {
+		181D56D31ABDB90600D252BC /* Build configuration list for PBXNativeTarget "Anquiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181D56D41ABDB90600D252BC /* Debug */,
@@ -656,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "NanoChallenge01Tests" */ = {
+		181D56D61ABDB90600D252BC /* Build configuration list for PBXNativeTarget "AnquizTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181D56D71ABDB90600D252BC /* Debug */,
