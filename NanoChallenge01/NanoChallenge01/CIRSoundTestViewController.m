@@ -46,6 +46,10 @@
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
     imagemPadrao = [UIImage imageNamed:@"novacor.png"];
+    
+    NSLog(@"Sounds: %@ // %zd", self.files.sounds, [self.files.sounds count]);
+    NSLog(@"Images: %@ // %zd", self.files.images, [self.files.images count]);
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -84,8 +88,8 @@
 //    [_buttonArray[answerIndexOnArray] setImage:answerImage forState:UIControlStateNormal];
     
     NSMutableArray *imagesAlreadyOnView = [NSMutableArray array];
-    
     [imagesAlreadyOnView addObject:@(answerIndex)];
+    
     BOOL answerOnView = NO;
     for (UIButton *button in _buttonArray) {
         if (answerOnArrayAux>0 || answerOnView) {
