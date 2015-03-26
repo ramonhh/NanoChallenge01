@@ -25,19 +25,19 @@
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="h7b-or-zWk">
                     <rect key="frame" x="67" y="199" width="240" height="241"/>
-                    <color key="backgroundColor" red="1" green="0.91192125202830365" blue="0.73949258961485986" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.062016280709054072" blue="0.96470588235294119" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vDy-jB-Iji">
-                    <rect key="frame" x="177" y="513" width="20" height="20"/>
+                    <rect key="frame" x="179" y="512" width="20" height="20"/>
                 </activityIndicatorView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-yu-WTf">
-                    <rect key="frame" x="19" y="547" width="336" height="20.5"/>
+                    <rect key="frame" x="20" y="547" width="336" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.91192125202830365" blue="0.73949258961485986" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.94305437141921522" green="0.98848803212050718" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>

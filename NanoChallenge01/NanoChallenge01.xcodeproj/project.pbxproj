@@ -47,6 +47,7 @@
 		F5CF82D11AC480440086A49B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D01AC480440086A49B /* logo.png */; };
 		F5CF82D31AC481280086A49B /* app-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D21AC481280086A49B /* app-120.png */; };
 		F5CF82D51AC481BE0086A49B /* app-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D41AC481BE0086A49B /* app-180.png */; };
+		F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CF82D61AC489850086A49B /* fazenda-background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		F5CF82D01AC480440086A49B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F5CF82D21AC481280086A49B /* app-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-120.png"; sourceTree = "<group>"; };
 		F5CF82D41AC481BE0086A49B /* app-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-180.png"; sourceTree = "<group>"; };
+		F5CF82D61AC489850086A49B /* fazenda-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fazenda-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 		351F30721AC324F3009F9D54 /* background */ = {
 			isa = PBXGroup;
 			children = (
+				F5CF82D61AC489850086A49B /* fazenda-background.png */,
 				185F92731AC3585100A9A01C /* backgroundImage.gif */,
 			);
 			name = background;
@@ -422,6 +425,7 @@
 				189543BC1AC4805B00EB806C /* som_serpente.mp3 in Resources */,
 				185F92821AC3599A00A9A01C /* bt_vaca.png in Resources */,
 				18AAAA311AC47C5F00D27E14 /* bt_leopardo.png in Resources */,
+				F5CF82D71AC489850086A49B /* fazenda-background.png in Resources */,
 				185F928F1AC359F000A9A01C /* som_galo.mp3 in Resources */,
 				185F928E1AC359F000A9A01C /* som_elefante.mp3 in Resources */,
 				18AAAA301AC47C5F00D27E14 /* bt_foca.png in Resources */,
