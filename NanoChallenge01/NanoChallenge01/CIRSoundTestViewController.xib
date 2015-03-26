@@ -10,6 +10,7 @@
                 <outlet property="option2" destination="kyz-Pe-hax" id="Pw1-SN-RZl"/>
                 <outlet property="option3" destination="f6F-wZ-J6N" id="WJd-b5-TLt"/>
                 <outlet property="option4" destination="x0F-A0-rk6" id="5X5-X4-Pik"/>
+                <outlet property="scoreLabel" destination="vTI-qf-tR8" id="jt1-ov-MGw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,26 +41,38 @@
                     <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="optionOnTouch:" destination="-1" eventType="touchUpInside" id="6mL-Fn-2Kg"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-Pe-hax">
                     <rect key="frame" x="223" y="334" width="102" height="102"/>
                     <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="optionOnTouch:" destination="-1" eventType="touchUpInside" id="UsK-C1-DbO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-wZ-J6N">
                     <rect key="frame" x="50" y="488" width="102" height="102"/>
                     <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="optionOnTouch:" destination="-1" eventType="touchUpInside" id="YtR-m2-RR5"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-A0-rk6">
                     <rect key="frame" x="223" y="488" width="102" height="102"/>
                     <state key="normal" image="novacor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="optionOnTouch:" destination="-1" eventType="touchUpInside" id="vy1-pi-Gaw"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
                     <rect key="frame" x="84" y="248" width="206" height="62"/>
                     <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

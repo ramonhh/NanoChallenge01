@@ -17,8 +17,9 @@
     
     // Propriedades auxiliares
     NSUInteger answerIndex;
-    NSUInteger randomIndex;
-    UIImage *answerImage;
+    NSUInteger answerIndexOnArray;
+    NSUInteger score;
+    UIImage *answerImage, *imagemPadrao;
     Sound *answerSound;
 }
 
@@ -41,6 +42,10 @@
     
     _buttonArray = @[self.option1, self.option2, self.option3, self.option4];
     inGame = NO;
+    
+    score = 0;
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    imagemPadrao = [UIImage imageNamed:@"novacor.png"];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -53,16 +58,16 @@
 }
 
 - (IBAction)playOnTouch:(UIButton *)sender{
+    [[SoundManager sharedManager] stopAllSounds];
     if(!inGame)
-        [self newGame];
+        [self nextLevel];
     else {
-        [answerSound stop];
         [[SoundManager sharedManager] playSound:answerSound.name];
-        
     }
 }
 
-- (void) newGame {
+- (void) nextLevel {
+    [[SoundManager sharedManager] stopAllSounds];
     // Gerando um index aleatorio em busca de uma nova resposta
     answerIndex = arc4random() % [self.files.sounds count];
     
@@ -70,37 +75,84 @@
     answerSound = [[Sound alloc] initWithContentsOfFile:self.files.sounds[answerIndex]];
     [[SoundManager sharedManager] playSound:answerSound.name];
     
-    answerImage = [UIImage imageNamed:self.files.images[answerIndex]];
+    // Gerando um numero aleatorio (0 ... 3)
+    answerIndexOnArray = arc4random() % (4);
+    NSUInteger answerOnArrayAux = answerIndexOnArray;
     
-    randomIndex = arc4random() % (4);
+//    // Setando a imagem em uma posicao randomica (0 ... 3)
+//    answerImage = [UIImage imageNamed:self.files.images[answerIndex]];
+//    [_buttonArray[answerIndexOnArray] setImage:answerImage forState:UIControlStateNormal];
     
-    [_buttonArray[randomIndex] setImage:answerImage forState:UIControlStateNormal];
+    NSMutableArray *imagesAlreadyOnView = [NSMutableArray array];
     
-    long indexRestante;
-    NSMutableArray *posicoes = [NSMutableArray array];
-    [posicoes addObject:[NSNumber numberWithLong:answerIndex]];
-    
-    for (UIButton *b in _buttonArray) {
-        if (![b isEqual:_buttonArray[randomIndex]]) {
-            indexRestante = arc4random() % [self.files.sounds count];
-            NSLog(@"indexRestante random: %ld", indexRestante);
-            for (int i = 0; i < posicoes.count; i++) {
-                if ([posicoes[i] longValue] == indexRestante) {
-                    NSLog(@"--- %ld ja encontrado", indexRestante);
-                    indexRestante = arc4random() % [self.files.sounds count];
-                    NSLog(@"Novo valor: %ld", indexRestante);
-                    i = 0;
-                }
+    [imagesAlreadyOnView addObject:@(answerIndex)];
+    BOOL answerOnView = NO;
+    for (UIButton *button in _buttonArray) {
+        if (answerOnArrayAux>0 || answerOnView) {
+            NSUInteger novoIndice = arc4random() % [self.files.images count];
+            
+            while ([imagesAlreadyOnView containsObject:@(novoIndice)]) {
+                novoIndice = arc4random() % [self.files.images count];
             }
+            [imagesAlreadyOnView addObject:@(novoIndice)];
             
-            UIImage *img = [UIImage imageNamed:self.files.images[indexRestante]];
-            [posicoes addObject:[NSNumber numberWithLong:indexRestante]];
-            
-            [b setImage:img forState:UIControlStateNormal];
+            UIImage *img = [UIImage imageNamed:self.files.images[novoIndice]];
+            [button setImage:img forState:UIControlStateNormal];
+            answerOnArrayAux--;
+        } else {
+            answerImage = [UIImage imageNamed:self.files.images[answerIndex]];
+            [button setImage:answerImage forState:UIControlStateNormal];
+            answerOnView = YES;
         }
     }
     
+    
+//    long indexRestante;
+//    NSMutableArray *posicoes = [NSMutableArray array];
+//    [posicoes addObject:[NSNumber numberWithLong:answerIndex]];
+//    
+//    for (UIButton *b in _buttonArray) {
+//        if (![b isEqual:_buttonArray[answerIndexOnArray]]) {
+//            indexRestante = arc4random() % [self.files.sounds count];
+//            NSLog(@"indexRestante random: %ld", indexRestante);
+//            for (int i = 0; i < posicoes.count; i++) {
+//                if ([posicoes[i] longValue] == indexRestante) {
+//                    NSLog(@"--- %ld ja encontrado", indexRestante);
+//                    indexRestante = arc4random() % [self.files.sounds count];
+//                    NSLog(@"Novo valor: %ld", indexRestante);
+//                    i = 0;
+//                }
+//            }
+//            
+//            UIImage *img = [UIImage imageNamed:self.files.images[indexRestante]];
+//            [posicoes addObject:[NSNumber numberWithLong:indexRestante]];
+//            
+//            [b setImage:img forState:UIControlStateNormal];
+//        }
+//    }
+    
     inGame = YES;
+}
+
+- (void) newGame {
+    score = 0;
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    [self nextLevel];
+}
+
+- (IBAction) optionOnTouch:(UIButton*) sender{
+    if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
+        NSLog(@"Certa resposta!");
+        
+        score+=50;
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
+        [self.scoreLabel setNeedsDisplay];
+        [self nextLevel];
+        
+    } else {
+        NSLog(@"Errou!");
+        [self newGame];
+    }
 }
 
 /*
