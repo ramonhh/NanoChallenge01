@@ -22,7 +22,11 @@
     //self.window.backgroundColor = [UIColor whiteColor];
     
     
+<<<<<<< Updated upstream
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fazenda-background.png"]];
+=======
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgTeste.png"]];
+>>>>>>> Stashed changes
     //[self.window addSubview:backgroundView];
     
     // Iniciando a SoundTest
