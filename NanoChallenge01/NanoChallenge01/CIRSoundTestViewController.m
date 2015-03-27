@@ -64,7 +64,7 @@
     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] integerValue];
     self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
     
-    timeLapsed = 10;
+    timeLapsed = 60;
     
 }
 
@@ -164,8 +164,7 @@
             
         } else {
             NSLog(@"Errado!");
-            [self wrongAnswer:sender];
-            
+            [self wrongAnswer];
         }
     }
 }
@@ -211,7 +210,7 @@
     timeLapsed-=1;
     self.timeLapsedLabel.text = [NSString stringWithFormat:@"Time: %d", timeLapsed];
     if (timeLapsed<0) {
-        [self wrongAnswer:self.playButton];
+        [self gameOver:self.playButton];
         [timer invalidate];
         timer = nil;
     } else if (timeLapsed<=5){
@@ -241,7 +240,7 @@
     [self nextLevel];
 }
 
-- (void) wrongAnswer:(UIButton *)sender {
+- (void) gameOver:(UIButton *)sender {
     inGame = NO;
     
     // Animacao de fade na cor do score (Vermelho)
@@ -261,6 +260,18 @@
     
     // Recarrega o jogo
     [self viewDidLoad];
+}
+
+- (void) wrongAnswer {
+    // Soma o score
+    if(score>0)
+        score-=50;
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
+    
+    // Animacao de fade na cor do score (verde)
+    [self changeScoreColor:[UIColor redColor] :0.25];
+    [self performSelector:@selector(greenToWhite) withObject:nil afterDelay:0.5];
+    
 }
 
 /*
