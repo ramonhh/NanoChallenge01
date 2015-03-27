@@ -13,6 +13,7 @@
                 <outlet property="option4" destination="x0F-A0-rk6" id="5X5-X4-Pik"/>
                 <outlet property="playButton" destination="Iaj-lq-dDJ" id="Qq1-zq-GsL"/>
                 <outlet property="scoreLabel" destination="vTI-qf-tR8" id="jt1-ov-MGw"/>
+                <outlet property="timeLapsedLabel" destination="h4U-bM-jLf" id="Tlm-ZP-Bdw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -69,10 +70,10 @@
                         <action selector="playOnTouch:" destination="-1" eventType="touchUpInside" id="huZ-cO-y93"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
-                    <rect key="frame" x="12" y="135" width="350" height="62"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-bM-jLf">
+                    <rect key="frame" x="189" y="135" width="186" height="62"/>
                     <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                    <color key="textColor" red="0.98630491125383868" green="0.99281126436579004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.98630491129999998" green="0.9928112644" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="shadowColor" red="0.019607843140000001" green="0.21176470589999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                     <size key="shadowOffset" width="0.0" height="1"/>
@@ -92,6 +93,14 @@
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" red="0.019607843137254902" green="0.21176470588235294" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                     <size key="shadowOffset" width="0.0" height="3"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
+                    <rect key="frame" x="8" y="135" width="186" height="62"/>
+                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                    <color key="textColor" red="0.98630491125383868" green="0.99281126436579004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="shadowColor" red="0.019607843140000001" green="0.21176470589999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>

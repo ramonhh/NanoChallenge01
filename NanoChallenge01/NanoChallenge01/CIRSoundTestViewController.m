@@ -22,6 +22,10 @@
     NSUInteger score, highScore;
     UIImage *answerImage, *imagemPadrao;
     Sound *answerSound;
+    NSDate *start;
+    NSTimeInterval timeInterval;
+    NSTimer *timer;
+    int timeLapsed;
 }
 
 @property (nonatomic) CIRSoundImage *files;
@@ -52,10 +56,15 @@
         [button setImage:imagemPadrao forState:UIControlStateNormal];
     }
     [self.playButton setTitle:@"     Play     " forState:UIControlStateNormal];
+    // Labels e botoes com valores padrao
+    self.scoreLabel.text = @"";
+    self.timeLapsedLabel.text = @"";
     
     // Snippet used to get your highscore from the prefs.
     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] integerValue];
     self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
+    
+    timeLapsed = 10;
     
 }
 
@@ -72,9 +81,19 @@
     [[SoundManager sharedManager] stopAllSounds];
     if(!inGame){
         self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+        self.timeLapsedLabel.text = [NSString stringWithFormat:@"Time: %d", timeLapsed];
         [sender setTitle:@"     Play Sound     " forState:UIControlStateNormal];
         // Comeca o game
         inGame = YES;
+        
+        start = [NSDate date];
+        [timer invalidate];
+        timer = nil;
+        timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                          target:self
+                                                        selector:@selector(decrementScore)
+                                                        userInfo:NULL repeats:YES];
+        
         [self nextLevel];
     } else {
         [[SoundManager sharedManager] playSound:answerSound.name];
@@ -129,6 +148,7 @@
 - (void) newGame {
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    self.timeLapsedLabel.text = [NSString stringWithFormat:@"Time: %d", timeLapsed];
     
     self.highScoreLabel.textColor = [UIColor whiteColor];
     [self nextLevel];
@@ -140,48 +160,12 @@
     if (inGame){
         if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
             NSLog(@"Certo!");
-            
-            // Soma o score
-            score+=50;
-            self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
-            
-            // Animacao de fade na cor do score (verde)
-            [self changeScoreColor:[UIColor greenColor] :0.25];
-            [self performSelector:@selector(greenToWhite) withObject:nil afterDelay:0.5];
-            
-            // Se o score ultrapassou o highScore
-            // Label highScore passa a receber o Score
-            if(score>highScore) {
-                highScore = score;
-                self.highScoreLabel.textColor = [UIColor greenColor];
-                [self.highScoreLabel setNeedsDisplay];
-                self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
-            }
-            
-            // Carrega o proximo nivel
-            [self nextLevel];
+            [self correctAnswer];
             
         } else {
             NSLog(@"Errado!");
-            inGame = NO;
+            [self wrongAnswer:sender];
             
-            // Animacao de fade na cor do score (Vermelho)
-            [self changeScoreColor:[UIColor redColor] :0.25];
-            [self performSelector:@selector(redToWhite) withObject:nil afterDelay:1];
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-            
-            // Salva o highScore
-            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:highScore] forKey:@"HighScore"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
-            
-            // Labels e botoes com valores padrao
-            self.scoreLabel.text = @"";
-            [sender setTitle:@"     Play     " forState:UIControlStateNormal];
-            
-            // Recarrega o jogo
-            [self newGame];
-            [self viewDidLoad];
         }
     }
 }
@@ -205,6 +189,78 @@
         [self.scoreLabel setTextColor:textColor];
         [self.scoreLabel setShadowColor:[UIColor blackColor]];
     } completion:nil];
+}
+
+- (void) changeTimeColor :(UIColor *) textColor :(float) segundos {
+    [UIView transitionWithView:self.view duration:segundos options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.timeLapsedLabel setTextColor:textColor];
+        [self.timeLapsedLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
+    [self performSelector:@selector(restoreTimeColor) withObject:nil afterDelay:0.2];
+}
+
+- (void) restoreTimeColor {
+    [UIView transitionWithView:self.view duration:0.2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.timeLapsedLabel setTextColor:[UIColor whiteColor]];
+        [self.timeLapsedLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
+}
+
+
+- (void) decrementScore{
+    timeLapsed-=1;
+    self.timeLapsedLabel.text = [NSString stringWithFormat:@"Time: %d", timeLapsed];
+    if (timeLapsed<0) {
+        [self wrongAnswer:self.playButton];
+        [timer invalidate];
+        timer = nil;
+    } else if (timeLapsed<=5){
+        [self changeTimeColor:[UIColor redColor] :0.2];
+    }
+}
+
+- (void) correctAnswer {
+    // Soma o score
+    score+=50;
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %zd", score];
+    
+    // Animacao de fade na cor do score (verde)
+    [self changeScoreColor:[UIColor greenColor] :0.25];
+    [self performSelector:@selector(greenToWhite) withObject:nil afterDelay:0.5];
+    
+    // Se o score ultrapassou o highScore
+    // Label highScore passa a receber o Score
+    if(score>highScore) {
+        highScore = score;
+        self.highScoreLabel.textColor = [UIColor greenColor];
+        [self.highScoreLabel setNeedsDisplay];
+        self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
+    }
+    
+    // Carrega o proximo nivel
+    [self nextLevel];
+}
+
+- (void) wrongAnswer:(UIButton *)sender {
+    inGame = NO;
+    
+    // Animacao de fade na cor do score (Vermelho)
+    [self changeScoreColor:[UIColor redColor] :0.25];
+    [self performSelector:@selector(redToWhite) withObject:nil afterDelay:1];
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    
+    // Salva o highScore
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:highScore] forKey:@"HighScore"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
+    
+    [sender setTitle:@"     Play     " forState:UIControlStateNormal];
+    
+    [timer invalidate];
+    timer = nil;
+    
+    // Recarrega o jogo
+    [self viewDidLoad];
 }
 
 /*
