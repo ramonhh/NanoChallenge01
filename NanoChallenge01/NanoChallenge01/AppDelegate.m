@@ -23,7 +23,6 @@
     
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fazenda-background.png"]];
-    //[self.window addSubview:backgroundView];
     
     // Iniciando a SoundTest
     CIRSoundTestViewController *test = [[CIRSoundTestViewController alloc] init];

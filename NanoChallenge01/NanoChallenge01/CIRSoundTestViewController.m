@@ -35,17 +35,24 @@
     
     self.files = [[CIRSoundImage alloc] init];
     
+    // Configurando o sharedManager
     [[SoundManager sharedManager] prepareToPlay];
-    
     [[SoundManager sharedManager] setMusicVolume:0.1];
     [[SoundManager sharedManager] setSoundVolume:1];
+    [[SoundManager sharedManager] stopAllSounds];
     
+    // Array para acessar os 4 botoes
     _buttonArray = @[self.option1, self.option2, self.option3, self.option4];
-    inGame = NO;
     
+    // Setando os estados 'padrao' para os componentes
+    inGame = NO;
     score = 0;
-    self.scoreLabel.text = @"";
     imagemPadrao = [UIImage imageNamed:@"novacor.png"];
+    for (UIButton *button in _buttonArray) {
+        [button setImage:imagemPadrao forState:UIControlStateNormal];
+    }
+    [self.playButton setTitle:@"     Play     " forState:UIControlStateNormal];
+    
     
     // Snippet used to get your highscore from the prefs.
     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] integerValue];
@@ -65,9 +72,9 @@
 - (IBAction)playOnTouch:(UIButton *)sender{
     [[SoundManager sharedManager] stopAllSounds];
     if(!inGame){
-        [self nextLevel];
         self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
         [sender setTitle:@"     Play Sound     " forState:UIControlStateNormal];
+        [self nextLevel];
     } else {
         [[SoundManager sharedManager] playSound:answerSound.name];
     }
@@ -80,7 +87,7 @@
     
     // Criando um novo som
     answerSound = [[Sound alloc] initWithContentsOfFile:self.files.sounds[answerIndex]];
-    if(inGame)
+    
         [[SoundManager sharedManager] playSound:answerSound.name];
     
     // Gerando um numero aleatorio (0 ... 3)
@@ -118,6 +125,7 @@
 - (void) newGame {
     score = 0;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
+    
     self.highScoreLabel.textColor = [UIColor whiteColor];
     [self nextLevel];
 }
@@ -157,7 +165,11 @@
                 self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
             }
             
+            self.scoreLabel.text = @"";
+            [sender setTitle:@"     Play     " forState:UIControlStateNormal];
+            
             [self newGame];
+            [self viewDidLoad];
         }
     }
 }

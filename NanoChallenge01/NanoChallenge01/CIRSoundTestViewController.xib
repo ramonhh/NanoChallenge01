@@ -11,6 +11,7 @@
                 <outlet property="option2" destination="kyz-Pe-hax" id="Pw1-SN-RZl"/>
                 <outlet property="option3" destination="f6F-wZ-J6N" id="WJd-b5-TLt"/>
                 <outlet property="option4" destination="x0F-A0-rk6" id="5X5-X4-Pik"/>
+                <outlet property="playButton" destination="Iaj-lq-dDJ" id="Qq1-zq-GsL"/>
                 <outlet property="scoreLabel" destination="vTI-qf-tR8" id="jt1-ov-MGw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,14 +21,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What sound is it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Y-o7-RHg">
-                    <rect key="frame" x="8" y="72" width="359" height="50"/>
-                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="45"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <color key="shadowColor" red="0.019607843137254902" green="0.21176470588235294" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
-                    <size key="shadowOffset" width="0.0" height="3"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-nh-Aox">
                     <rect key="frame" x="50" y="344" width="102" height="102"/>
                     <state key="normal" image="novacor.png">
@@ -77,7 +70,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-qf-tR8">
-                    <rect key="frame" x="12" y="130" width="350" height="62"/>
+                    <rect key="frame" x="12" y="135" width="350" height="62"/>
                     <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                     <color key="textColor" red="0.98630491125383868" green="0.99281126436579004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,6 +84,14 @@
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" red="0.019607843137254902" green="0.21176470588235294" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                     <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whose is this sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Y-o7-RHg">
+                    <rect key="frame" x="9" y="62" width="356" height="75"/>
+                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="38"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.019607843137254902" green="0.21176470588235294" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="3"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
