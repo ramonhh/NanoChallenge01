@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/CancelButton.png</key>
+		<data>
+		iPQLp8gVSVv45PtPORshOx1K2ZE=
+		</data>
+		<key>Resources/English.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0DyLE0tNSiDc1Dk7jz2rO8SZ6ow=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/MainMenu.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PjJGH9fEiLJweauEYz7ieZXnzRw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/ImageBrowser.png</key>
+		<data>
+		VTQfauDyNxU+hNYQgEBH02qsmnA=
+		</data>
+		<key>Resources/MinusButton.png</key>
+		<data>
+		7q56zFaeUugI/c8mFBK3ZXD+syo=
+		</data>
+		<key>Resources/NameChanger Help/.cvsignore</key>
+		<data>
+		Ri7TsAyIHW6Chhz+DN+jGn+qkaU=
+		</data>
+		<key>Resources/NameChanger Help/Functions.html</key>
+		<data>
+		B6StzOeQz8WH/HBr8DWbIfBGgew=
+		</data>
+		<key>Resources/NameChanger Help/Functions/.cvsignore</key>
+		<data>
+		Ri7TsAyIHW6Chhz+DN+jGn+qkaU=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Append.html</key>
+		<data>
+		fbL0XiB7x9TGKRqzf/50eJo5imk=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Date.html</key>
+		<data>
+		01O/kzotLTh/xlVHaCrt1e3K0PQ=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Prepend.html</key>
+		<data>
+		Ji7h4/ZdtPPl2m4Yt51+M2SwHTQ=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Regular Expression.html</key>
+		<data>
+		czN58B+nBgFwNgf79NLltxbwlAU=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Remove Characters.html</key>
+		<data>
+		HChEDkwMr0/ZK959ChT2VCMGVMg=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Replace All Occurrences.html</key>
+		<data>
+		JjCkgj1b08dZ4YzaFZrwZzHbEAY=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Replace First Occurrence.html</key>
+		<data>
+		avI/E2zubFNUmtXHnqVhAfTv/YM=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Replace Last Occurrence.html</key>
+		<data>
+		snwxbuPwRUN4I8zGdDhWYdTQPHc=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Sequence.html</key>
+		<data>
+		KRKBs9zFM9AiF1MfWG7XmPPhoOU=
+		</data>
+		<key>Resources/NameChanger Help/Functions/Wildcard.html</key>
+		<data>
+		i2sKYm/B4VEaySbRbBOdBM3JVsc=
+		</data>
+		<key>Resources/NameChanger Help/General Features.html</key>
+		<data>
+		hk625hPOIV+V+dFzUkqQnPIO9Z4=
+		</data>
+		<key>Resources/NameChanger Help/General/.cvsignore</key>
+		<data>
+		Ri7TsAyIHW6Chhz+DN+jGn+qkaU=
+		</data>
+		<key>Resources/NameChanger Help/General/Filename Table.html</key>
+		<data>
+		K4euU9gSfd7qwpB4et2ipN1D8ZM=
+		</data>
+		<key>Resources/NameChanger Help/General/Image Browser.html</key>
+		<data>
+		SteLtz23JCREE9Qq0wKDJQiAYjo=
+		</data>
+		<key>Resources/NameChanger Help/General/Options.html</key>
+		<data>
+		kfEbZ3TuYW31Jl/ZNzvJnvT9Niw=
+		</data>
+		<key>Resources/NameChanger Help/General/Preferences.html</key>
+		<data>
+		un1AOwrn5inSBLKN4pcpn47AUj4=
+		</data>
+		<key>Resources/NameChanger Help/General/Saving.html</key>
+		<data>
+		+3fsR/vTKz8/zrRN5HH/eERVlL0=
+		</data>
+		<key>Resources/NameChanger Help/General/Toolbar.html</key>
+		<data>
+		Ir1bzH0GQ9tpFwOSEyPDE9nBhV4=
+		</data>
+		<key>Resources/NameChanger Help/NameChanger Help.html</key>
+		<data>
+		hzNWMxqYIVsYukEgWLlwft2UaYE=
+		</data>
+		<key>Resources/NameChanger Help/img/.cvsignore</key>
+		<data>
+		Ri7TsAyIHW6Chhz+DN+jGn+qkaU=
+		</data>
+		<key>Resources/NameChanger Help/img/Append.png</key>
+		<data>
+		z9wZ9a+LClMVDBEu+iOuHIWx+N8=
+		</data>
+		<key>Resources/NameChanger Help/img/Date Dialog.png</key>
+		<data>
+		eVqfcx3FUSd6Gi52P7GatZqm3/k=
+		</data>
+		<key>Resources/NameChanger Help/img/Date.png</key>
+		<data>
+		PtuMLKmnqBIrNPctyME6I0Y5X0U=
+		</data>
+		<key>Resources/NameChanger Help/img/Help Screenshot - 13.png</key>
+		<data>
+		F5DfpfIRBZoa9JUWrA2ebxjUTAg=
+		</data>
+		<key>Resources/NameChanger Help/img/Help Screenshot - 14.png</key>
+		<data>
+		VcQ1c24RijJpcuGzp/pp/TpmTbg=
+		</data>
+		<key>Resources/NameChanger Help/img/Help Screenshot - 15.png</key>
+		<data>
+		0fCzvI11R54N61JktCiA3uAUnUo=
+		</data>
+		<key>Resources/NameChanger Help/img/Help Screenshot - 16.png</key>
+		<data>
+		3rkcNNyeeT9SpGxGlZSTW5eTkqg=
+		</data>
+		<key>Resources/NameChanger Help/img/Help Screenshot - 17.png</key>
+		<data>
+		Y0aqPpLFep4Tot8bbvVkxccL+P0=
+		</data>
+		<key>Resources/NameChanger Help/img/Prepend.png</key>
+		<data>
+		m7LluspTiZ71yn2KuZT4NyfRUu0=
+		</data>
+		<key>Resources/NameChanger Help/img/Regular Expression.png</key>
+		<data>
+		xzMI18+Q/pN4KX3rHf22XX5u08E=
+		</data>
+		<key>Resources/NameChanger Help/img/Remove End.png</key>
+		<data>
+		LlOFJ5V56VWuVtPygg3wuasq4U4=
+		</data>
+		<key>Resources/NameChanger Help/img/Remove Range.png</key>
+		<data>
+		9W2E5gQOAnQQrdraHADCVaNC5As=
+		</data>
+		<key>Resources/NameChanger Help/img/Replace All.png</key>
+		<data>
+		3e4D6VW2e2Y2BR5sug6CnuMwCWY=
+		</data>
+		<key>Resources/NameChanger Help/img/Replace First.png</key>
+		<data>
+		0U8ugQt29UIYg3Teeez0Uu8DzHU=
+		</data>
+		<key>Resources/NameChanger Help/img/Replace Last.png</key>
+		<data>
+		PuxmZnnVyyWaKQT6BOaFC5xkfHQ=
+		</data>
+		<key>Resources/NameChanger Help/img/Sequence Dialog.png</key>
+		<data>
+		WO4Txyc/2We/qaRmcEYl8LsypFM=
+		</data>
+		<key>Resources/NameChanger Help/img/Sequence.png</key>
+		<data>
+		HoW1Biw2ls6kKuB4yeShA5lQJBQ=
+		</data>
+		<key>Resources/NameChanger Help/img/Toolbar.png</key>
+		<data>
+		W7dE7pOhjEWBmtJDYRz3TJDv+Nw=
+		</data>
+		<key>Resources/NameChanger Help/img/Wildcard.png</key>
+		<data>
+		Fh9rTifMMv4BbE4lt8Eph+Liob0=
+		</data>
+		<key>Resources/NameChanger Help/img/pen.png</key>
+		<data>
+		Jc50mQfkNXS75CYJ/fpvefTx7Xk=
+		</data>
+		<key>Resources/NameChanger Help/img/pen16.png</key>
+		<data>
+		vVr1nI6UNJd6lafOvs44nl9WNts=
+		</data>
+		<key>Resources/NameChangerIcon.icns</key>
+		<data>
+		dGAg7RaLogq7yVMNr6ECfdwBFg0=
+		</data>
+		<key>Resources/NameChangerSoftwareUpdates.xml</key>
+		<data>
+		U2vUlRz7WvIxu0npLkjF0wTcW14=
+		</data>
+		<key>Resources/PlayButton.png</key>
+		<data>
+		moQq825Rpr6Pf4isawb7UStQuRk=
+		</data>
+		<key>Resources/PlusButton.png</key>
+		<data>
+		f/fjrUR8kgnLFoQlLpie/pMbEf8=
+		</data>
+		<key>Resources/RegexKitLiteLicense.rtf</key>
+		<data>
+		PrfPSujl36L+m9g/DSiAs7sIb2g=
+		</data>
+		<key>Resources/RenameMap.cdm</key>
+		<data>
+		UcOYGTYXz6YqbuC6tLXRZLYztVI=
+		</data>
+		<key>Resources/RenameSheet.nib</key>
+		<data>
+		cFXUxpmKTrX1HirAEb6/Fc95+Z4=
+		</data>
+		<key>Resources/Renames.momd/Renames 2.mom</key>
+		<data>
+		gVwLRr+Y5jh6JCePPCA0kQ1bvkM=
+		</data>
+		<key>Resources/Renames.momd/Renames 2.omo</key>
+		<data>
+		k2VAjs8MOXFqE6bJu5xhGaWSRiM=
+		</data>
+		<key>Resources/Renames.momd/VersionInfo.plist</key>
+		<data>
+		LyYcuiDd+3TL4jz1jDSPRqWoRxA=
+		</data>
+		<key>Resources/TitleSheet.nib</key>
+		<data>
+		91oG+McKbQlMluubApakeoT4V84=
+		</data>
+		<key>Resources/dsa_pub.pem</key>
+		<data>
+		0gCH0b5dgC4oCOYfNKR8Z9Ms0ac=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

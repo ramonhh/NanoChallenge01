@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+	<channel>
+		<title>NameChanger Software Updates</title>
+		<link>http://web.mac.com/mickeyroberson/MRR_Software/NameChanger.html</link>
+		<description>Updates to NameChanger are published to this feed.</description>
+		<generator>Feeder 1.4.5 http://reinventedsoftware.com/feeder/</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en</language>
+		<!-- When publishing a new version of the app, change the two dates below -->
+		<pubDate>Mon, 26 Nov 2007 07:00:00 -0400</pubDate>
+		<lastBuildDate>Mon, 26 Nov 2007 07:00:00 -0400</lastBuildDate>
+		<!-- Then copy and paste this <item>, making sure to change: -->
+		<!-- The <title> tag, the release notes, the <pubDate>, the <enclosure> URL, the guid, -->
+		<!-- AND the sparkle:version -->
+		<item>
+			<title>NameChanger_2.0</title>
+			<description><![CDATA[
+				<h1>NameChanger 2.0 Release Notes</h1>
+				<h2>What's New</h2>
+					<ul>
+						<li>Fully Leopard compatible.</li>
+						<li>Image Browser integration: visually browse and rearrange images</li>
+						<li>Character Removal</li>
+						<li>Core Animation</li>
+						<li>User Interface Improvements</li>
+						<li>Improved drag-n-drop</li>
+						<li>Sparkle Update Integration</li>
+					</ul>
+				]]>
+			</description>
+			<pubDate>Mon, 26 Nov 2007 07:00:00 -0400</pubDate>
+			<enclosure url="http://web.mac.com/mickeyroberson/Downloads/NameChanger/NameChanger.zip" type="application/zip" sparkle:version="2.0"/>
+			<guid isPermaLink="false">namechanger20</guid>
+		</item>
+	</channel>
+</rss>

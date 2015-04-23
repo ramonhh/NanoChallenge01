@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+        <title>Date</title>
+    </head>
+    <body>
+        <h2>Date</h2>
+        <small>
+            <span style="font-weight: bold;">Type:</span>
+            Date Rename
+            <br>
+            <br>
+        </small>
+        Date
+        renaming allows the addition of a date string to each filename.
+        &nbsp;The details controlling the Date rename function are presented in 
+        a separate dialog that appears when <span style="font-style: italic;">Date</span>
+        is selected as the rename type.
+        <br>
+        <br>
+        <br>
+        The Date rename function has three modes which can be selected to the right of the rename type combo box:
+        <br>
+        <ul>
+            <li>
+                <span style="font-weight: bold; font-style: italic;">Custom Date</span>
+                - Custom date allows the user to specify a date from the DatePicker in the Date dialog.
+            </li>
+            <li>
+                <span style="font-style: italic;"><span style="font-weight: bold;">File Date</span></span>
+                - Take the file modification date for each file. &nbsp;The value in the DatePicker is ignored.
+            </li>
+			<li>
+                <span style="font-style: italic;"><span style="font-weight: bold;">EXIF Date</span></span>
+                - Take the date from the EXIF information (if present) for each file. &nbsp;The value in the DatePicker is ignored.
+            </li>
+        </ul>
+		All modes allow the selection of format from one of 6 possibilities, and
+        the location of the date. &nbsp;Append will place the date string at
+        the end of the filename. &nbsp;To keep the original extensions enable 
+        the <a href="../General/Options.html"><span style="font-style: italic;">Hide Extensions</span></a>
+        option. &nbsp;Prepend will place the date string at the beginning of the filename.
+        <br>
+        <br>
+        <img alt="" src="../img/Date%20Dialog.png" align="top"><img alt="" src="../img/Date.png">
+    </body>
+</html>

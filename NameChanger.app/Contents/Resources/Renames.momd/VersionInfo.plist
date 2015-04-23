@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_CurrentVersionName</key>
+	<string>Renames 2</string>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>Renames 2</key>
+		<dict>
+			<key>DateRename</key>
+			<data>
+			Dsq54qeFkbzy9FJ5cRaQNIN+CQ7SXEKRVLVhdlJvaDU=
+			</data>
+			<key>RemoveRename</key>
+			<data>
+			E/KJQi3EZ+qSA9wENkbCepSE+zlYxM850qBt4ljKE/k=
+			</data>
+			<key>Rename</key>
+			<data>
+			ovfJao15O/islXsrEnAmgcmfFbfdMHOz6biSfV+e5pM=
+			</data>
+			<key>SequenceRename</key>
+			<data>
+			6Yzi1UDBDWfcQAjRO57FqnIecu3oY5sGVyK195Xtd00=
+			</data>
+			<key>TextualRename</key>
+			<data>
+			nL6OrdspERqQOf2+MWbN7pcWX/lDL+Jz0ZREn55uJ7E=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>

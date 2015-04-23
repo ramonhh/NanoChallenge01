@@ -64,7 +64,7 @@
     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] integerValue];
     self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
     
-    timeLapsed = 60;
+    timeLapsed = 5;
     
 }
 
@@ -85,6 +85,7 @@
         [sender setTitle:@"     Play Sound     " forState:UIControlStateNormal];
         // Comeca o game
         inGame = YES;
+        self.gameOverLabel.hidden = YES;
         
         start = [NSDate date];
         [timer invalidate];
@@ -150,7 +151,11 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %lu", score];
     self.timeLapsedLabel.text = [NSString stringWithFormat:@"Time: %d", timeLapsed];
     
-    self.highScoreLabel.textColor = [UIColor whiteColor];
+    [self performSelector:@selector(redToWhite) withObject:nil afterDelay:1];
+    
+//    self.highScoreLabel.textColor = [UIColor whiteColor];
+    self.gameOverLabel.hidden = YES;
+    
     [self nextLevel];
 }
 
@@ -159,11 +164,11 @@
     [[SoundManager sharedManager] stopAllSounds];
     if (inGame){
         if ([sender isEqual:_buttonArray[answerIndexOnArray]]) {
-            NSLog(@"Certo!");
+//            NSLog(@"Certo!");
             [self correctAnswer];
             
         } else {
-            NSLog(@"Errado!");
+//            NSLog(@"Errado!");
             [self wrongAnswer];
         }
     }
@@ -202,6 +207,13 @@
     [UIView transitionWithView:self.view duration:0.2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         [self.timeLapsedLabel setTextColor:[UIColor whiteColor]];
         [self.timeLapsedLabel setShadowColor:[UIColor blackColor]];
+    } completion:nil];
+}
+
+- (void) gameOverTransitionColor {
+    [UIView transitionWithView:self.view duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.gameOverLabel setTextColor:[UIColor whiteColor]];
+        [self.gameOverLabel setShadowColor:[UIColor blackColor]];
     } completion:nil];
 }
 
@@ -246,12 +258,21 @@
     // Animacao de fade na cor do score (Vermelho)
     [self changeScoreColor:[UIColor redColor] :0.25];
     [self performSelector:@selector(redToWhite) withObject:nil afterDelay:1];
+    
+    // Vibrar
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     
     // Salva o highScore
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:highScore] forKey:@"HighScore"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     self.highScoreLabel.text = [NSString stringWithFormat:@"Highscore: %@", [NSNumber numberWithInteger:highScore]];
+    self.highScoreLabel.textColor = [UIColor whiteColor];
+    
+    // Label do gameover
+    self.gameOverLabel.hidden = NO;
+    self.gameOverLabel.text = [NSString stringWithFormat:@"Game over! Your score was %lu", score];
+    self.gameOverLabel.textColor = [UIColor redColor];
+    [self performSelector:@selector(gameOverTransitionColor) withObject:nil afterDelay:1];
     
     [sender setTitle:@"     Play     " forState:UIControlStateNormal];
     
@@ -271,7 +292,7 @@
     // Animacao de fade na cor do score (verde)
     [self changeScoreColor:[UIColor redColor] :0.25];
     [self performSelector:@selector(greenToWhite) withObject:nil afterDelay:0.5];
-    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 /*
